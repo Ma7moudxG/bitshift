@@ -1,8 +1,16 @@
+export const metadata = {
+    title: "Bitshift ⋅ Services",
+    description: "",
+  };
+
+import Main from '@/components/Main';
 import React from 'react'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <Main>
+        Services
+    </Main>
   )
 }
 
