@@ -6,3 +6,22 @@
 html, body {
     background-color: white; 
 }
+
+@keyframes typewriter {
+    0% {
+      width: 0; /* Start with no width */
+      opacity: 0; /* Invisible */
+    }
+    100% {
+      width: 100%; /* Full width */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .letter {
+    display: inline-block; /* Ensure letters are inline */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  

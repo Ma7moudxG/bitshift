@@ -1,11 +1,23 @@
-import React from 'react'
+'use client'
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // Updated hook
 
-const navItems = { "HomePage": "/", "Services": "/services", "Products":"/products", "Careers": "/careers", "About us": "/about_us", "Contact us": "/contact_us"}
+const navItems = { 
+  "HomePage": "/", 
+  "Services": "/services", 
+  "Products": "/products", 
+  "Careers": "/careers", 
+  "About us": "/about_us", 
+  "Contact us": "/contact_us"
+};
+
 const Navbar = () => {
+  const pathname = usePathname(); // Get the current path
+  
   return (
-    <div className="p-4 sm:p-8 flex items-center justify-between gap-4">
+    <div className="p-4 sm:p-8 flex items-center justify-between gap-4 max-w-[1200px] mx-auto">
         <div className="flex">
             <Link href="/">
                 <Image 
@@ -19,14 +31,15 @@ const Navbar = () => {
         <ul className="items-center gap-8 md:flex hidden">
             {Object.entries(navItems).map(([label, url], index) => (
                 <li key={index}
-                    className="text-[#02033B] hover:font-bold hover:text-[#35BCDC]"
+                    className={`text-[#02033B] hover:text-[#35BCDC] 
+                      ${pathname === url ? 'font-bold text-[#35BCDC]' : ''}`}
                 >
                   <Link href={url}>{label}</Link>
                 </li>
             ))}
         </ul>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
