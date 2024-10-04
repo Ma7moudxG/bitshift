@@ -16,7 +16,7 @@ export default function Hero() {
               text={words}
               speed={100} // typing speed
               eraseSpeed={50} // erasing speed
-              eraseDelay={1000} // delay before erasing
+              eraseDelay={500} // delay before erasing
               cursorRenderer={cursor => <span className="text-[#35BCDC]">{cursor}</span>}
               displayTextRenderer={(text, i) => {
                 return (
@@ -37,12 +37,20 @@ export default function Hero() {
             />
           </span>
         </h1>
-        <p className="max-w-[600px] mx-auto sm:p-6 md:p-8 p-12">
-          We are Zeno Technology, a team of talented and passionate IT experts who have a wealth of experience and knowledge in various domains and technologies.
-        </p>
-        <button className="bg-[#B6E89E] px-8 py-4 rounded-full text-[#02033B] font-bold">
-          Setup a quick call with us!
-        </button>
+        
+        <h3 className="text-2xl sm:text-3xl md:text-4xl max-w-[500px] mx-auto sm:p-6 md:p-8 p-12">
+        Transform your business processes with Bitshift.
+        </h3>
+
+        {/* Centered buttons container */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-[600px] mx-auto mt-8">
+          <button className="bg-white px-8 py-4 rounded-full text-[#02033B] font-bold">
+            Get Started
+          </button>
+          <button className="bg-[#B6E89E] px-8 py-4 rounded-full text-[#02033B] font-bold">
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   );
