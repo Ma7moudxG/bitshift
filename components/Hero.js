@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="relative flex w-full max-h-screen bg-[url('/home-slider-laptop.jpg')] bg-center bg-cover items-center justify-center text-center text-white mx-auto">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
 
-      <div className="relative z-10">
+      <div className="relative">
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black">
           DO IT <span className="text-[#35BCDC]">
             <ReactTypingEffect

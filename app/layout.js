@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={`'bg-white w-full mx-auto text-sm sm:text-base min-h-screen flex flex-col ' + ${inter.className} `} >
         <header className="bg-white">
           <Navbar />
