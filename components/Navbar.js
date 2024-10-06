@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Updated hook
 
 const navItems = { 
-  "HomePage": "/", 
+  "Home": "/", 
   "About us": "/about_us",
-  "Services": "/services", 
+  "Services": "/services",
+  "Products": "/products", 
   "Training": "/training", 
-  "Resources": "/resources", 
+  "Blogs & News": "/blogs_news", 
   "Contact us": "/contact_us"
 };
 

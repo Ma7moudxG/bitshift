@@ -6,7 +6,7 @@ export default function Hero() {
   const words = ["FASTER", "BETTER", "SAFER"];
 
   return (
-    <div className="relative flex w-full max-h-screen bg-[url('/home-slider-laptop.jpg')] bg-center bg-cover items-center justify-center text-center text-white mx-auto">
+    <div className="relative h-dvh flex w-full max-h-screen bg-[url('/technology-home-slide.png')] bg-center bg-cover items-center justify-center text-center text-white mx-auto">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
 
       <div className="relative">
