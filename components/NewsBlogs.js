@@ -37,13 +37,14 @@ export default function NewsBlogs() {
             <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl md:pr-8 text-centers">
                 NEWS & BLOGS
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-6">
                     <Image 
                         src={news[0].url}
                         alt={news[0].title}
                         height={432}
                         width={592}
+                        layout="responsive"
                     />
                     <div className="flex flex-col gap-4">
                         <p className="text-[#35BCDC] text-xs">{news[0].author} • {news[0].date}</p>
@@ -64,12 +65,13 @@ export default function NewsBlogs() {
                 
                 <div className="flex flex-col gap-6">
                     {blogs.map((blog, index) => (
-                        <div key={index} className="flex gap-6">
+                        <div key={index} className="flex flex-col md:flex-row gap-6">
                             <Image 
                                 src={blog.url}
                                 alt={blog.title}
                                 height={200}
                                 width={320}
+                                layout="responsive"
                             />
                             <div className="flex flex-col gap-4">
                                 <p className="text-[#35BCDC] text-xs">{blog.author} • {blog.date}</p>
@@ -78,7 +80,6 @@ export default function NewsBlogs() {
                             </div>
                         </div>
                     ))}
-                    
                 </div>
             </div>
         </div>

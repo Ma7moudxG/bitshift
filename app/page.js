@@ -1,4 +1,5 @@
 import Aboutus from "@/components/Aboutus";
+import CallToAction from "@/components/CallToAction";
 import Hero from "@/components/Hero";
 import Main from "@/components/Main";
 import NewsBlogs from "@/components/NewsBlogs";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Services />
       <WhyUs />
       <NewsBlogs />
+      <CallToAction />
     </Main>
   );
 }
