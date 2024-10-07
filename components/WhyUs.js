@@ -32,7 +32,7 @@ export default function WhyUs() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1200px] mx-auto place-items-center">
             {whys.map((why, index) => (
-                <div className="flex flex-col gap-8 p-8 w-[305px] rounded-2xl items-center">
+                <div key={index} className="flex flex-col gap-8 p-8 w-[305px] rounded-2xl items-center">
                     <Image 
                         src={why.url}
                         alt={why.url}
