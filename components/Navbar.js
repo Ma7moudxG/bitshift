@@ -24,8 +24,8 @@ const Navbar = () => {
                 <Image 
                     src="/bitshift-logo.svg"
                     alt="bitshift logo"
-                    height={120}
-                    width={120}
+                    height={160}
+                    width={160}
                 />
             </Link>
         </div>
