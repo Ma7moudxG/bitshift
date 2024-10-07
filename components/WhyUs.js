@@ -30,7 +30,7 @@ export default function WhyUs() {
                 At Bitshift, we stand out through our commitment to quality, extensive experience, and focus on innovation.
             </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1200px] mx-auto place-items-center">
             {whys.map((why, index) => (
                 <div className="flex flex-col gap-8 p-8 w-[305px] rounded-2xl items-center">
                     <Image 
@@ -38,10 +38,11 @@ export default function WhyUs() {
                         alt={why.url}
                         height={75}
                         width={56}
+                        className="size-16"
                     />
                     <h1 className="text-3xl font-extrabold text-[#02033B]">{why.title}</h1>
                     <p className="text-[#2E2F35] text-base text-center">{why.description}</p>
-            </div>
+                </div>
             ))}
         </div>
     </div>

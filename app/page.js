@@ -1,6 +1,7 @@
 import Aboutus from "@/components/Aboutus";
 import Hero from "@/components/Hero";
 import Main from "@/components/Main";
+import NewsBlogs from "@/components/NewsBlogs";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Aboutus />
       <Services />
       <WhyUs />
+      <NewsBlogs />
     </Main>
   );
 }
