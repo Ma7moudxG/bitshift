@@ -10,7 +10,7 @@ const navItems = {
   "Services": "/services",
   "Products": "/products", 
   "Training": "/training", 
-  "Blogs & News": "/blogs_news", 
+  "News & Blogs": "/news-blogs", 
   "Contact us": "/contact_us"
 };
 
