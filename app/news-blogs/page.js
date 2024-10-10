@@ -12,14 +12,15 @@ export default function NewsBlogs() {
     const router = useRouter()
     return (
       <Main>
-        <div className="bg-[url('/blogs-news-bg.jpg')] bg-center bg-cover h-[400px]">
-          <div className='max-w-[1200px] mx-auto h-full flex items-center p-8 lg:p-0'>
-            <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-left">
-              NEWS & 
-              <br />
-              BLOGS
-            </h1>
-          </div>
+        <div className="relative bg-[url('/blogs-news1-bg.jpg')] bg-center bg-cover h-[400px]">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
+            <div className='relative max-w-[1200px] mx-auto h-full flex items-center p-8 lg:p-0 z-0'>
+                <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-left">
+                NEWS & 
+                <br className="hidden md:block"/>
+                {' '} BLOGS
+                </h1>
+            </div>
         </div>
   
         <div className='max-w-[1200px] mx-auto md:py-14 py-8'>
