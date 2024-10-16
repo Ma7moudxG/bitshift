@@ -17,7 +17,7 @@ export default function FooterComponent() {
         <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-start md:items-center gap-8">
           
           {/* Left section (Logo) */}
-          <div className="text-center md:items-start">
+          <div className="flex flex-col text-center items-center md:items-start">
             <Link href="/">
                 <Image 
                     src="/bitshift-logo.svg"
@@ -26,7 +26,7 @@ export default function FooterComponent() {
                     width={160}
                 />
             </Link>
-            <p className="text-xs sm:text-sm md:text-base text-center md:text-left pt-4">
+            <p className="sm:text-sm md:text-base text-center md:text-left pt-4 max-w-[70%] md:max-w-full">
               At Bitshift, we empower businesses to thrive in the digital age.
             </p>
           </div>
