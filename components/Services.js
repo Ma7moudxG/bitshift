@@ -20,7 +20,7 @@ const services = [
     description: 'Targeted training programs to elevate team skills and foster continuous improvement..'
   },{
     title: 'Custom Software Solutions',
-    url: '/icons/services/consultation-training.svg',
+    url: '/icons/services/custom-software-solutions.svg',
     description: 'Bespoke software tailored to your business needs, enhancing efficiency and user experience.'
   },{
     title: 'IT Service Management Systems',
