@@ -32,19 +32,19 @@ const whys = [
 const profiles = [
   {
     title: "Essam",
-    url: "/essam-photo.svg",
+    url: "/essam.jpg",
     description:
       "A seasoned IT professional with 17 years of experience, specializing in agile project management, cloud platforms, and team leadership. Skilled in fostering collaboration and mentoring IT staff.",
   },
   {
     title: "Tamer",
-    url: "/essam-photo.svg",
+    url: "/essam.jpg",
     description:
       "Experienced IT and cloud leader with over 20 years in digital transformation, cloud adoption, and team leadership. Expert in aligning IT strategies with business goals and enhancing agility. Skilled in cybersecurity, innovation, and driving high-performance teams.",
   },
   {
     title: "Ahmed",
-    url: "/essam-photo.svg",
+    url: "/essam.jpg",
     description:
       "A seasoned IT professional with 17 years of experience, specializing in agile project management, cloud platforms, and team leadership. Skilled in fostering collaboration and mentoring IT staff.",
   },
@@ -137,17 +137,17 @@ export default function AboutUs() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1200px] mx-auto gap-x-20 gap-y-12">
-          {profiles.map((why, index) => (
+          {profiles.map((profile, index) => (
             <div
               key={index}
               className="flex flex-col gap-4 w-[320px] items-center"
             >
-              <Image src={why.url} alt={why.url} height={200} width={200} />
+              <Image src={profile.url} alt={profile.url} height={200} width={200} className="grayscale hover:filter-none transition-all size-44 hover:size-56" />
               <h1 className="text-2xl font-extrabold text-[#02033B]">
-                {why.title}
+                {profile.title}
               </h1>
               <p className="text-[#667085] text-sm md:text-base text-center">
-                {why.description}
+                {profile.description}
               </p>
             </div>
           ))}
