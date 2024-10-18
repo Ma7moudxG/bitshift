@@ -142,8 +142,8 @@ export default function AboutUs() {
               key={index}
               className="flex flex-col gap-4 w-[320px] items-center"
             >
-              <Image src={profile.url} alt={profile.url} height={200} width={200} className="grayscale hover:filter-none transition-all size-44 hover:size-56" />
-              <h1 className="text-2xl font-extrabold text-[#02033B]">
+              {/* <Image src={profile.url} alt={profile.url} height={200} width={200} className="grayscale hover:filter-none transition-all size-44 hover:size-56" /> */}
+              <h1 className="text-2xl lg:text-3xl font-extrabold text-[#02033B]">
                 {profile.title}
               </h1>
               <p className="text-[#667085] text-sm md:text-base text-center">
