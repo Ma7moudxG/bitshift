@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { blogs } from '@/components/blogs';
+import { blogs } from '../../../components/blogs';
 import Image from 'next/image';
 
 export default function BlogPage({ params }) {

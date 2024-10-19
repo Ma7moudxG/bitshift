@@ -3,8 +3,8 @@ export const metadata = {
   description: "",
 };
 
-import Main from "@/components/Main";
-import ServiceCardDetailed from "@/components/ServiceCardDetailed";
+import Main from "../../components/Main";
+import ServiceCardDetailed from "../../components/ServiceCardDetailed";
 import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";

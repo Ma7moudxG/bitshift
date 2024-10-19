@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { news } from '@/components/news';
+import { news } from '../../../components/news';
 import Image from 'next/image';
 
 export default function NewsPage({ params }) {

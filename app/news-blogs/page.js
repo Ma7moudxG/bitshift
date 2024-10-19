@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 
-import Main from '@/components/Main';
+import Main from '../../components/Main';
 import React from 'react'
 import { blogs } from '../../components/blogs'
 import { news } from '../../components/news'

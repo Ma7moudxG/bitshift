@@ -3,7 +3,7 @@ export const metadata = {
   description: "",
 };
 
-import Main from "@/components/Main";
+import Main from "../../components/Main";
 import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
