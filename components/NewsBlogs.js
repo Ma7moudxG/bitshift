@@ -44,14 +44,15 @@ export default function NewsBlogs() {
                 
                 <div className="flex flex-col gap-6">
                     {blogs.slice(0, 2).map((blog, index) => (
-                        <div key={index} className="flex flex-col md:flex-row gap-6">
-                            <Image 
+                        <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="relative w-full h-[180px] sm:h-[220px] lg:h-[200px]">
+                                <Image 
                                 src={blog.url}
                                 alt={blog.title}
-                                height={200}
-                                width={320}
-                                layout="responsive"
-                            />
+                                layout="fill"       
+                                objectFit="cover"  
+                                />
+                            </div>
                             <div className="flex flex-col gap-4">
                                 <p className="text-[#35BCDC] text-xs">{blog.author} • {blog.date}</p>
                                 <h1 
