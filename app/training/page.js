@@ -59,7 +59,7 @@ export default function Training() {
     <Main>
       <div className="relative bg-[url('/training-bg.jpg')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex items-center p-8 lg:p-0 z-0">
+        <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 lg:justify-start lg:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-left">
             TRAINING
           </h1>
@@ -117,7 +117,7 @@ export default function Training() {
           ))}
 
           {/* Fifth item centered and spanning both columns */}
-          <div className="flex flex-col gap-4 rounded-2xl items-start bg-[#F1F7FE] p-8 max-w-[50%] col-span-1 lg:col-span-2 mx-auto">
+          <div className="flex flex-col gap-4 rounded-2xl items-start bg-[#F1F7FE] p-8 lg:max-w-[50%] col-span-1 lg:col-span-2 mx-auto">
             <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B] text-left">
               5. {offerings[4].title}
             </h1>
@@ -140,7 +140,7 @@ export default function Training() {
               key={index}
               className="flex flex-col gap-4 w-[305px] rounded-2xl items-start"
             >
-              <h1 className="text-2xl md:text-3xl font-extrabold text-[#02033B] max-w-[70%]">
+              <h1 className="text-2xl md:text-3xl font-extrabold text-[#02033B] lg:max-w-[70%]">
                 {why.title}
               </h1>
               <p className="text-[#2E2F35] text-sm md:text-base text-left">

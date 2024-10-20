@@ -1,43 +1,61 @@
-'use client'
-import React, {useState} from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Updated hook
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation"; // Updated hook
 
-const navItems = { 
-  "Home": "/", 
+const navItems = {
+  Home: "/",
   "About us": "/about_us",
-  "Services": "/services",
-  "Products": "/products", 
-  "Training": "/training", 
-  "News & Blogs": "/news-blogs", 
-  "Contact us": "/contact_us"
+  Services: "/services",
+  Products: "/products",
+  Training: "/training",
+  "News & Blogs": "/news-blogs",
+  "Contact us": "/contact_us",
 };
 
 const Navbar = () => {
   const pathname = usePathname(); // Get the current path
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [header, setHeader] = useState(false);
+
+  const scrollHeader = () => {
+    if (window.scrollY >= 20) setHeader(true);
+    else setHeader(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+    return () => {
+      window.addEventListener("scroll", scrollHeader);
+    };
+  }, []);
+
   return (
-    <div className="p-4 sm:p-8 flex items-center justify-between gap-4 max-w-[1200px] mx-auto">
+    <div className={ header ? "fixed z-10 bg-white w-[100%] p-3 shadow-md" : " p-4 sm:p-8 "}>
+      <div
+        className="flex items-center justify-between gap-4 max-w-[1200px] mx-auto"
+      >
         <div className="flex">
-            <Link href="/">
-                <Image 
-                    src="/bitshift-logo.svg"
-                    alt="bitshift logo"
-                    height={160}
-                    width={160}
-                />
-            </Link>
+          <Link href="/">
+            <Image
+              src="/bitshift-logo.svg"
+              alt="bitshift logo"
+              height={160}
+              width={160}
+            />
+          </Link>
         </div>
         <ul className="items-center gap-8 lg:flex hidden">
-            {Object.entries(navItems).map(([label, url], index) => (
-                <li key={index}
-                    className={`text-[#02033B] hover:text-[#35BCDC] 
-                      ${pathname === url ? 'font-bold text-[#35BCDC]' : ''}`}
-                >
-                  <Link href={url}>{label}</Link>
-                </li>
-            ))}
+          {Object.entries(navItems).map(([label, url], index) => (
+            <li
+              key={index}
+              className={`text-[#02033B] hover:text-[#35BCDC] 
+                      ${pathname === url ? "font-bold text-[#35BCDC]" : ""}`}
+            >
+              <Link href={url}>{label}</Link>
+            </li>
+          ))}
         </ul>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -49,7 +67,7 @@ const Navbar = () => {
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8 cursor-pointer"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
@@ -69,11 +87,13 @@ const Navbar = () => {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] gap-12">
               {Object.entries(navItems).map(([label, url], index) => (
-                  <li key={index}
-                      className='text-[#02033B] hover:text-[#35BCDC] text-xl'
-                  >
-                    <Link href={url}>{label}</Link>
-                  </li>
+                <li
+                  key={index}
+                  className="text-[#02033B] hover:text-[#35BCDC] text-xl"
+                  onClick={ () => setIsNavOpen(false)}
+                >
+                  <Link href={url}>{label}</Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -97,8 +117,9 @@ const Navbar = () => {
         align-items: center;
       }
     `}</style>
+      </div>
     </div>
   );
-}
+};
 
 export default Navbar;
