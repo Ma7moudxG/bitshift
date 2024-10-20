@@ -55,16 +55,16 @@ export default function AboutUs() {
     <Main>
       <div className="relative bg-[url('/about-us-banner1.jpg')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 lg:justify-start lg:p-0 z-0">
-          <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-left">
+        <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
+          <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
             ABOUT
-            <br className="hidden md:block" /> US
+            <br className="hidden xl:block" /> US
           </h1>
         </div>
       </div>
 
       <div className="max-w-[1200px] mx-auto md:py-14 py-8">
-        <div className="flex flex-col p-8 lg:p-0 md:py-14 py-8 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
+        <div className="flex flex-col p-8 xl:p-0 md:py-14 py-8 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col text-left gap-8 justify-center">
               <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl">
@@ -156,7 +156,7 @@ export default function AboutUs() {
 
       <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 lg:p-0 z-0">
+        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
             READY TO ELEVATE YOUR BUSINESS?
           </h1>

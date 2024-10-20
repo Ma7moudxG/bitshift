@@ -14,10 +14,10 @@ export default function ContactUS() {
     <Main>
       <div className="relative bg-[url('/blogs-news2-bg.avif')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 lg:justify-start lg:p-0 z-0">
-          <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-left">
+        <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
+          <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
             CONTACT
-            <br className="hidden lg:block" /> US
+            <br className="hidden xl:block" /> US
           </h1>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function ContactUS() {
 
       <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 lg:p-0 z-0">
+        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
             Get Started Today!
           </h1>
