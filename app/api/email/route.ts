@@ -110,13 +110,20 @@ export async function POST(request: NextRequest) {
     new Promise<string>((resolve, reject) => {
       transport.sendMail(clientMailOptions, function (err, info) {
         if (!err) {
-
+          resolve(info.response);
         } else {
           console.error("Error occurred: %s", err.message); // Log the error
           reject(err.message);
         }
       });
-      transport.sendMail(companyMailOptions)
+      transport.sendMail(companyMailOptions , function (err, info) {
+        if (!err) {
+          resolve(info.response);
+        } else {
+          console.error("Error occurred: %s", err.message); // Log the error
+          reject(err.message);
+        }
+      })
     });
 
   try {
