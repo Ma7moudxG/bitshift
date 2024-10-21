@@ -31,7 +31,7 @@ const ContactFormT: FC = () => {
 
   function onSubmit(data: FormData) {
     sendEmail({...data, subject});
-    reset();
+    // reset();
   }
 
   return (
