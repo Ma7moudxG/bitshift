@@ -121,7 +121,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    // return NextResponse.json({ message: "Email sent. Thank you!" });
+    return NextResponse.json({ success: true });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
