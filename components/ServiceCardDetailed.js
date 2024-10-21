@@ -4,7 +4,7 @@ import React from 'react'
 export default function ServiceCardDetailed(props) {
     const { title, url, description } = props;
   return (
-    <div className="bg-white flex flex-col gap-8 p-8 w-[380px] rounded-2xl">
+    <div className="bg-white flex flex-col gap-8 p-8 w-[305px] sm:w-[380px] rounded-2xl">
         <Image 
             src={url}
             alt={url}

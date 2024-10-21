@@ -2,36 +2,47 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
+
 const autoResponseEmail = `
-  <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9;">
-    <img src="https://bitshift-m.netlify.app/bitshift-logo.svg" alt="Bitshift tech Logo" width="200" style="display: block; margin: 0 auto;" />
-    <p>Dear {{name}},</p>
-    <p>Thank you for contacting Bitshift Tech. </br> We have received your request and will process it shortly.</p>
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr>
-        <th style="border: 1px solid #ddd; padding: 8px;">Name</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Content</th>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Name</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">{{name}}</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Subject</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">{{subject}}</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Email</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">{{email}}</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Mobile</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">{{mobile}}</td>
-      </tr>
-    </table>
-    <p>Best regards,</p>
-    <p>Bitshift Tech</p>
-  </div>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+      <table bgcolor="#fafafa" style=" width: 100%!important; height: 100%; background-color: #fafafa; padding: 20px; font-family: 'Inter', sans-serif;  font-size: 100%; line-height: 1.6;">
+        <tr>
+          <td>
+          </td>
+          <td bgcolor="#FFFFFF" style="border: 1px solid #eeeeee; background-color: #ffffff; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
+            <div style="padding:20px; max-width:600px; margin:0 auto; display:block;">
+              <table style="width: 100%;">
+                <tr>
+                  <td>
+                    <p style="text-align: left; display: block;  padding-bottom:20px;  margin-bottom:20px; border-bottom:1px solid #dddddd;">
+                      <img src="https://bitshift-m.netlify.app/bitshift-logo.png"/>
+                    </p>
+                    <h3 style="font-weight: 400; font-size: 22px; margin: 20px 0 30px 0; color: #333333;">Dear {{name}},</h3>
+                    <h3 style="font-weight: 200; font-size: 18px; margin: 20px 0 30px 0; color: #333333;">Thank you for contacting Bitshift Tech. </br> This is to confirm that We have received your request and we will process it shortly.</h3>
+                    </br>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Name:</strong> {{name}} </h2>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Subject:</strong> {{subject}} </h2>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Email:</strong> {{email}} </h2>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Mobile Number:</strong> {{mobile}} </h2>
+                    </br>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 10px 0; color: #333333;"> Best regards, </h2>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 10px 0; color: #333333;"> Bitshift Tech </h2>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
 `;
 
 const internalEmail = `
@@ -90,7 +101,7 @@ export async function POST(request: NextRequest) {
   };
   const companyMailOptions: Mail.Options = {
     from: process.env.EMAIL, // Sender email
-    to: email, // Recipient email
+    to: process.env.EMAIL, // Recipient email
     subject: `'${subject}' .. Message from ${name}, ${email}, ${phone}`,
     html: internalEmailHtml,
   };
@@ -99,8 +110,7 @@ export async function POST(request: NextRequest) {
     new Promise<string>((resolve, reject) => {
       transport.sendMail(clientMailOptions, function (err, info) {
         if (!err) {
-          console.log("Message sent: %s", info.messageId); // Log the message ID
-          resolve("Email sent. Thank you!");
+
         } else {
           console.error("Error occurred: %s", err.message); // Log the error
           reject(err.message);
@@ -111,7 +121,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: "Email sent. Thank you!" });
+    // return NextResponse.json({ message: "Email sent. Thank you!" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }

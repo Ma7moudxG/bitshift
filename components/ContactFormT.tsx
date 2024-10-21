@@ -12,6 +12,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
+import toast, { Toaster } from "react-hot-toast";  // Importing toast
 
 export type FormData = {
   name: string;
@@ -24,19 +25,31 @@ export type FormData = {
 const ContactFormT: FC = () => {
   const { register, handleSubmit, reset } = useForm<FormData>();
   const [subject, setSubject] = useState("");
+  const [loading, setLoading] = useState(false);  // Loading state
 
   const handleChange = (event) => {
     setSubject(event.target.value);
   };
 
-  function onSubmit(data: FormData) {
-    sendEmail({...data, subject});
-    // reset();
+  async function onSubmit(data: FormData) {
+    setLoading(true);  // Set loading state when email is being sent
+    try {
+      await sendEmail({ ...data, subject });
+      reset();
+      toast.success("Message sent successfully!");  // Success toast
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");  // Error toast
+    } finally {
+      setLoading(false);  // Remove loading state
+    }
   }
 
   return (
-    <div className=" container mx-auto">
-      <div className=" max-w-[1200px] bg-white grid grid-cols-1 md:grid-cols-3 min-h-screen md:min-h-[667px] rounded-xl mx-auto">
+    <div className="container mx-auto">
+      {/* Toast Notification Container */}
+      <Toaster position="top-center" reverseOrder={false} />
+
+      <div className="max-w-[1200px] bg-white grid grid-cols-1 md:grid-cols-3 min-h-screen md:min-h-[667px] rounded-xl mx-auto">
         {/* First Column - Contact Information */}
         <div className="bg-[#02033B] flex flex-col justify-between rounded-xl text-white p-12 items-start text-left gap-5 md:gap-0 md:col-span-1">
           <h1 className="text-2xl font-bold">Contact Information</h1>
@@ -164,7 +177,7 @@ const ContactFormT: FC = () => {
                 <div className="flex gap-1">
                   <input
                     type="radio"
-                    value="other"
+                    value="Other"
                     checked={subject === "Other"}
                     onChange={handleChange}
                     className=" rounded-md border border-gray-300 bg-white text-sm font-normal text-gray-700 outline-none focus:border-[#35BCDC] focus:shadow-md"
@@ -189,8 +202,16 @@ const ContactFormT: FC = () => {
               ></textarea>
             </div>
 
-            <button className="hover:shadow-form rounded-md bg-[#02033B] hover:bg-[#35BCDC] p-3 text-base font-semibold text-white outline-none">
-              Send Message
+            <button
+              type="submit"
+              className="hover:shadow-form rounded-md bg-[#02033B] hover:bg-[#35BCDC] p-3 text-base font-semibold text-white outline-none flex items-center justify-center"
+              disabled={loading} // Disable button when loading
+            >
+              {loading ? (
+                <span className="spinner-border spinner-border-sm"></span> // Show spinner when loading
+              ) : (
+                "Send Message"
+              )}
             </button>
           </form>
         </div>
