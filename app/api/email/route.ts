@@ -93,13 +93,13 @@ export async function POST(request: NextRequest) {
   });
 
   const clientMailOptions: Mail.Options = {
-    from: process.env.EMAIL, // Sender email
+    from: `"Bitshift" <info@bitshift-tech.com>`, // Sender email
     to: email, // Recipient email
-    subject: `'${subject}' .. Bitshift Tech`,
+    subject: `Thank you for contacting Bitshift Tech`,
     html: senderEmailHtml,
   };
   const companyMailOptions: Mail.Options = {
-    from: process.env.EMAIL, // Sender email
+    from: `"Bitshift" <info@bitshift-tech.com>`,  // Sender email
     to: process.env.EMAIL, // Recipient email
     // to: email, // Recipient email
     subject: `'${subject}' .. Message from ${name}, ${email}, ${phone}`,
