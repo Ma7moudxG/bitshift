@@ -19,10 +19,10 @@ const autoResponseEmail = `
                 <tr>
                   <td>
                     <p style="text-align: left; display: block;  padding-bottom:20px;  margin-bottom:20px; border-bottom:1px solid #dddddd;">
-                      <img src="https://bitshift-m.netlify.app/bitshift-logo.png"/>
+                      <img src="https://bitshift-m.netlify.app/bitshift-logo.png" width="150"/>
                     </p>
                     <h3 style="font-weight: 400; font-size: 22px; margin: 20px 0 30px 0; color: #333333;">Dear {{name}},</h3>
-                    <h3 style="font-weight: 200; font-size: 18px; margin: 20px 0 30px 0; color: #333333;">Thank you for contacting Bitshift Tech. </br> This is to confirm that We have received your request and we will process it shortly.</h3>
+                    <h3 style="font-weight: 200; font-size: 18px; margin: 20px 0 30px 0; color: #333333;">Thank you for contacting Bitshift. </br> This is to confirm that We have received your request and we will process it shortly.</h3>
                     </br>
                     <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Name:</strong> {{name}} </h2>
                     <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Subject:</strong> {{subject}} </h2>
@@ -30,7 +30,23 @@ const autoResponseEmail = `
                     <h2 style="font-weight: 200; font-size: 16px; margin: 20px 0; color: #333333;"> <strong>Mobile Number:</strong> {{mobile}} </h2>
                     </br>
                     <h2 style="font-weight: 200; font-size: 16px; margin: 10px 0; color: #333333;"> Best regards, </h2>
-                    <h2 style="font-weight: 200; font-size: 16px; margin: 10px 0; color: #333333;"> Bitshift Tech </h2>
+                    <h2 style="font-weight: 200; font-size: 16px; margin: 10px 0; color: #333333;"> Bitshift </h2>
+                  </td>
+
+                  <td align="center">
+                    <img src="https://bitshift-m.netlify.app/bitshift-logo.png" alt="Bitshift Logo" width="150" style="display:block;">
+
+                    <!-- Social Media Icons -->
+                    <p style="font-size: 14px; color: #333;">Follow us on:</p>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                      <img src="https://bitshift-m.netlify.app/icons/email/twitter.png" alt="Twitter" width="24" height="24" style="margin-right: 10px;">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                      <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
+                    </a>
                   </td>
                 </tr>
               </table>
@@ -95,13 +111,13 @@ export async function POST(request: NextRequest) {
   const clientMailOptions: Mail.Options = {
     from: `"Bitshift" <info@bitshift-tech.com>`, // Sender email
     to: email, // Recipient email
-    subject: `Thank you for contacting Bitshift Tech`,
+    subject: `Thank you for contacting Bitshift`,
     html: senderEmailHtml,
   };
   const companyMailOptions: Mail.Options = {
-    from: `"Bitshift" <info@bitshift-tech.com>`,  // Sender email
-    to: process.env.EMAIL, // Recipient email
-    // to: email, // Recipient email
+    from: `"Bitshift" <info@bitshift-tech.com>`, // Sender email
+    // to: process.env.EMAIL, // Recipient email
+    to: email, // Recipient email
     subject: `'${subject}' .. Message from ${name}, ${email}, ${phone}`,
     html: internalEmailHtml,
   };
@@ -124,7 +140,10 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ success: true, message: 'Emails sent successfully' }); // You can customize the message or return nothing
+    return NextResponse.json({
+      success: true,
+      message: "Emails sent successfully",
+    }); // You can customize the message or return nothing
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
