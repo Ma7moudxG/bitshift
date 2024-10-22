@@ -2,7 +2,6 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
-
 const autoResponseEmail = `
   <html>
     <head>
@@ -102,33 +101,30 @@ export async function POST(request: NextRequest) {
   const companyMailOptions: Mail.Options = {
     from: process.env.EMAIL, // Sender email
     to: process.env.EMAIL, // Recipient email
+    // to: email, // Recipient email
     subject: `'${subject}' .. Message from ${name}, ${email}, ${phone}`,
     html: internalEmailHtml,
   };
 
   const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
-      transport.sendMail(clientMailOptions, function (err, info) {
-        if (!err) {
-          resolve(info.response);
-        } else {
-          console.error("Error occurred: %s", err.message); // Log the error
+    new Promise<void>((resolve, reject) => {
+      const clientMail = transport.sendMail(clientMailOptions);
+      const internalMail = transport.sendMail(companyMailOptions);
+
+      Promise.all([clientMail, internalMail])
+        .then(() => {
+          console.log("Emails sent successfully");
+          resolve(); // Resolve without passing any message
+        })
+        .catch((err) => {
+          console.error("Error occurred: %s", err.message);
           reject(err.message);
-        }
-      });
-      transport.sendMail(companyMailOptions , function (err, info) {
-        if (!err) {
-          resolve(info.response);
-        } else {
-          console.error("Error occurred: %s", err.message); // Log the error
-          reject(err.message);
-        }
-      })
+        });
     });
 
   try {
     await sendMailPromise();
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, message: 'Emails sent successfully' }); // You can customize the message or return nothing
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }

@@ -36,7 +36,7 @@ const ContactFormT: FC = () => {
     try {
       await sendEmail({ ...data, subject });
       reset();
-      toast.success("Message sent successfully!");  // Success toast
+      // toast.success("Message sent successfully!");  // Success toast
     } catch (error) {
       toast.error("Failed to send message. Please try again.");  // Error toast
     } finally {
