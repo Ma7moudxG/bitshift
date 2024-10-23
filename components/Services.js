@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import { useRouter } from 'next/navigation'
 
 const services = [
   {
@@ -29,6 +31,7 @@ const services = [
   },
 ]
 export default function Services() {
+  const router = useRouter()
   return (
     <div className="bg-[#02033B]">
       <div className="bg-[#02033B] flex flex-col p-8 sm:p-10 md:py-14 py-12 items-center justify-between gap-14 md:gap-20 max-w-[1200px] mx-auto">
@@ -51,7 +54,7 @@ export default function Services() {
           ))}
         </div>
         <div>
-          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/services')}>
             Learn More
           </button>
         </div>

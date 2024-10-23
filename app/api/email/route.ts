@@ -12,7 +12,7 @@ const autoResponseEmail = `
           margin: 0;
           padding: 0;
           font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
+          background-color: #ffffff;
           color: #333;
         }
         table {
@@ -41,19 +41,19 @@ const autoResponseEmail = `
         @media (prefers-color-scheme: dark) {
         body, .content {
           background-color: #ffffff !important; /* Keep light background */
-          color: #333333 !important; /* Keep dark text */
+          color: #02033B !important; /* Keep dark text */
         }
         .header, .footer {
           background-color: #ffffff !important;
         }
         a {
-          color: #2a9fd6 !important; /* Enforce link color */
+          color: #02033B !important; /* Enforce link color */
         }
       }
       </style>
     </head>
-    <body style="background-color: #fafafa">
-      <table bgcolor="#fafafa" style=" width: 100%!important; height: 100%; background-color: #fafafa; padding: 20px; font-family: 'Inter', sans-serif;  font-size: 100%; line-height: 1.6;">
+    <body style="background-color: #ffffff">
+      <table bgcolor="#ffffff" style=" width: 100%!important; height: 100%; background-color: #ffffff; padding: 20px; font-family: 'Inter', sans-serif;  font-size: 100%; line-height: 1.6;">
         <tr>
           <td>
           </td>

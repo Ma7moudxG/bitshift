@@ -1,11 +1,13 @@
-export const metadata = {
-  title: "Bitshift ⋅ Services",
-  description: "",
-};
+"use client"
+// export const metadata = {
+//   title: "Bitshift ⋅ Services",
+//   description: "",
+// };
 
 import Main from "../../components/Main";
 import ServiceCardDetailed from "../../components/ServiceCardDetailed";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -70,6 +72,7 @@ const whys = [
 ];
 
 const Services = () => {
+  const router = useRouter()
   return (
     <Main>
       <div className="relative bg-[url('/services-banner.jpg')] bg-center bg-cover h-[400px]">
@@ -104,7 +107,7 @@ const Services = () => {
               ))}
             </div>
 
-            <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+            <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
                Book a discovery call
               <BsArrowRight className="text-xl font-semibold" />
             </button>
@@ -153,7 +156,7 @@ const Services = () => {
             Bitshift can help you optimize your processes for better
             performance.
           </p>
-          <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+          <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
             Get Started
             <BsArrowRight className="text-xl font-semibold" />
           </button>

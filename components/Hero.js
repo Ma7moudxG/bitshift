@@ -1,10 +1,13 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
+
+
 export default function Hero() {
   const words = ["BETTER", "FASTER", "SAFER"];
-
+  const router = useRouter()
   return (
     <div className="relative h-dvh flex w-full max-h-screen bg-[url('/software-team-wrok.avif')] bg-center bg-cover items-center justify-center text-center text-white mx-auto">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
@@ -38,10 +41,10 @@ export default function Hero() {
 
         {/* Centered buttons container */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-[600px] mx-auto mt-6 ">
-          <button className="bg-white px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white">
+          <button className="bg-white px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white" onClick={() => router.push('/contact_us')}>
             Get Started
           </button>
-          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white " onClick={() => router.push('/contact_us')} >
             Learn More
           </button>
         </div>

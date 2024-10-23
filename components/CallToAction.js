@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function CallToAction() {
+  const router = useRouter
   return (
     <div className="relative bg-[url('/call-to-action.avif')] bg-center bg-cover">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
@@ -13,7 +15,7 @@ export default function CallToAction() {
           Contact us today to schedule a consultation and discover how we can
           help you Bitshift your processes for better performance.
         </p>
-        <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+        <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
           Get Started
           <BsArrowRight className="text-xl font-semibold" />
         </button>
