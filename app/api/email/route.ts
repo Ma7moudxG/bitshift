@@ -184,8 +184,8 @@ export async function POST(request: NextRequest) {
   };
   const companyMailOptions: Mail.Options = {
     from: `"Bitshift" <info@bitshift-tech.com>`, // Sender email
-    // to: process.env.EMAIL, // Recipient email
-    to: email, // Recipient email
+    to: process.env.EMAIL, // Recipient email
+    // to: email, // Recipient email
     subject: `'${subject}' .. Message from ${name}, ${email}, ${phone}`,
     html: internalEmailHtml,
   };
