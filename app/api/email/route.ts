@@ -28,16 +28,28 @@ const autoResponseEmail = `
         .header, .footer {
           text-align: center;
           padding: 20px;
-          background-color: #f4f4f4;
+          background-color: #ffffff;
         }
         .footer {
           font-size: 14px;
-          color: #666;
+          color: #02033B;
         }
         .footer a {
           color: #2a9fd6;
           text-decoration: none;
         }
+        @media (prefers-color-scheme: dark) {
+        body, .content {
+          background-color: #ffffff !important; /* Keep light background */
+          color: #333333 !important; /* Keep dark text */
+        }
+        .header, .footer {
+          background-color: #ffffff !important;
+        }
+        a {
+          color: #2a9fd6 !important; /* Enforce link color */
+        }
+      }
       </style>
     </head>
     <body style="background-color: #fafafa">
