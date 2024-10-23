@@ -1,9 +1,10 @@
 "use client"
+import { useRouter } from "next/navigation";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function CallToAction() {
-  const router = useRouter
+  const router = useRouter()
   return (
     <div className="relative bg-[url('/call-to-action.avif')] bg-center bg-cover">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
