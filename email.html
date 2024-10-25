@@ -7,7 +7,7 @@
           margin: 0;
           padding: 0;
           font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
+          background-color: #ffffff;
           color: #333;
         }
         table {
@@ -27,20 +27,32 @@
         }
         .footer {
           font-size: 14px;
-          color: #666;
+          color: #02033B;
         }
         .footer a {
           color: #2a9fd6;
           text-decoration: none;
         }
+        @media (prefers-color-scheme: dark) {
+        body, .content {
+          background-color: #ffffff !important; /* Keep light background */
+          color: #02033B !important; /* Keep dark text */
+        }
+        .header, .footer {
+          background-color: #ffffff !important;
+        }
+        a {
+          color: #02033B !important; /* Enforce link color */
+        }
+      }
       </style>
     </head>
-    <body style="background-color: #fafafa">
-      <table bgcolor="#fafafa" style=" width: 100%!important; height: 100%; background-color: #fafafa; padding: 20px; font-family: 'Inter', sans-serif;  font-size: 100%; line-height: 1.6;">
+    <body style="background-color: #ffffff">
+      <table bgcolor="#ffffff" style=" width: 100%!important; height: 100%; background-color: #ffffff; padding: 20px; font-family: 'Inter', sans-serif;  font-size: 100%; line-height: 1.6;">
         <tr>
           <td>
           </td>
-          <td bgcolor="#FFFFFF" style="border: 1px solid #eeeeee; background-color: #ffffff; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
+          <td bgcolor="#F3F6F4" style="border: 1px solid #eeeeee; background-color: #F3F6F4; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
             <div style="padding:20px; max-width:600px; margin:0 auto; display:block;">
               <table style="width: 100%;">
                 <tr>
@@ -63,14 +75,14 @@
                 </tr>
               </table>
               <table class="footer" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding: 20px; text-align: left;">
+                <tr >
+                  <td style="padding: 20px; text-align: left; background-color: #F3F6F4;">
                     <!-- Using table-based layout instead of flexbox for better email client support -->
                     <table cellpadding="0" cellspacing="0" align="left" width="100%">
                       <tr>
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
-                          <img src="https://bitshift-m.netlify.app/bitshift_logo.gif" width="150" style="padding-bottom: 10px;"/> <br />
-                          Follow us on: <br />
+                          <img src="https://bitshift-m.netlify.app/bitshift_logo.gif" width="150" style="padding-bottom: 10px;"/>
+                          <p style"padding-bottom: 5px;">Follow us on: </p>
                           <a href="https://www.facebook.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
                           </a>
@@ -80,17 +92,16 @@
                           <a href="https://www.youtube.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
                           </a>
-                        </td>
-                      
-                        <td align="left" style="font-size: 14px; padding-top: 10px;">
-                          <div style="display: flex; align-items: center;">
+                          <br />
+
+                          <div style="display: flex; align-items: center; padding-bottom: 5px;">
                             <img src="https://bitshift-m.netlify.app/icons/email/phone.png" alt="Facebook" width="18"  style="margin-right: 10px;"> 
                             (+2) 010 12345 4569
-                          </div> <br />
-                          <a href="mailto:info@bitshift-tech.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #02033B;">
+                          </div>
+                          <a href="mailto:info@bitshift-tech.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #02033B; padding-bottom: 5px;">
                             <img src="https://bitshift-m.netlify.app/icons/email/email.png" alt="Twitter" width="18"  style="margin-right: 10px;">
                             info@bitshift-tech.com
-                          </a><br />
+                          </a>
                           <div style="display: flex; align-items: center;">
                             <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="LinkedIn" width="18"  style="margin-right: 10px;">
                             Maadi, Cairo, EG

@@ -57,7 +57,7 @@ const autoResponseEmail = `
         <tr>
           <td>
           </td>
-          <td bgcolor="#FFFFFF" style="border: 1px solid #eeeeee; background-color: #ffffff; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
+          <td bgcolor="#F3F6F4" style="border: 1px solid #eeeeee; background-color: #F3F6F4; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
             <div style="padding:20px; max-width:600px; margin:0 auto; display:block;">
               <table style="width: 100%;">
                 <tr>
@@ -80,8 +80,8 @@ const autoResponseEmail = `
                 </tr>
               </table>
               <table class="footer" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding: 20px; text-align: left;">
+                <tr >
+                  <td style="padding: 20px; text-align: left; background-color: #F3F6F4;">
                     <!-- Using table-based layout instead of flexbox for better email client support -->
                     <table cellpadding="0" cellspacing="0" align="left" width="100%">
                       <tr>
