@@ -86,8 +86,8 @@ const autoResponseEmail = `
                     <table cellpadding="0" cellspacing="0" align="left" width="100%">
                       <tr>
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
-                          <img src="https://bitshift-m.netlify.app/bitshift_logo.gif" width="150" style="padding-bottom: 10px;"/> <br />
-                          Follow us on: <br />
+                          <img src="https://bitshift-m.netlify.app/bitshift_logo.gif" width="150" style="padding-bottom: 10px;"/>
+                          <p style"padding-bottom: 5px;">Follow us on: </p>
                           <a href="https://www.facebook.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
                           </a>
@@ -97,17 +97,16 @@ const autoResponseEmail = `
                           <a href="https://www.youtube.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
                           </a>
-                        </td>
-                      
-                        <td align="left" style="font-size: 14px; padding-top: 10px;">
-                          <div style="display: flex; align-items: center;">
+                          <br />
+
+                          <div style="display: flex; align-items: center; padding-bottom: 5px;">
                             <img src="https://bitshift-m.netlify.app/icons/email/phone.png" alt="Facebook" width="18"  style="margin-right: 10px;"> 
                             (+2) 010 12345 4569
-                          </div> <br />
-                          <a href="mailto:info@bitshift-tech.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #02033B;">
+                          </div>
+                          <a href="mailto:info@bitshift-tech.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #02033B; padding-bottom: 5px;">
                             <img src="https://bitshift-m.netlify.app/icons/email/email.png" alt="Twitter" width="18"  style="margin-right: 10px;">
                             info@bitshift-tech.com
-                          </a><br />
+                          </a>
                           <div style="display: flex; align-items: center;">
                             <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="LinkedIn" width="18"  style="margin-right: 10px;">
                             Maadi, Cairo, EG
