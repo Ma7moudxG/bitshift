@@ -86,7 +86,7 @@ const autoResponseEmail = `
                     <table cellpadding="0" cellspacing="0" align="left" width="100%">
                       <tr>
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
-                          <img src="https://bitshift-m.netlify.app/bitshift_logo.gif" width="150" style="padding-bottom: 10px;"/>
+                          <img src="https://bitshift-m.netlify.app/bitshift_logo.avif" width="150" style="padding-bottom: 10px;"/>
                           <p style"padding-bottom: 5px;">Follow us on: </p>
                           <a href="https://www.facebook.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
