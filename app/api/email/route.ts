@@ -57,7 +57,7 @@ const autoResponseEmail = `
         <tr>
           <td>
           </td>
-          <td bgcolor="#F3F6F4" style="border: 1px solid #eeeeee; background-color: #F3F6F4; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
+          <td bgcolor="#F3F6F4" style="border: 1px solid #eeeeee; background-color: #ffffff; border-radius:5px; display:block!important; max-width:600px!important; margin:0 auto!important; clear:both!important;">
             <div style="padding:20px; max-width:600px; margin:0 auto; display:block;">
               <table style="width: 100%;">
                 <tr>
@@ -81,12 +81,12 @@ const autoResponseEmail = `
               </table>
               <table class="footer" cellpadding="0" cellspacing="0">
                 <tr >
-                  <td style="padding: 20px; text-align: left; background-color: #F3F6F4;">
+                  <td style="padding: 20px; text-align: left; background-color: #ffffff;">
                     <!-- Using table-based layout instead of flexbox for better email client support -->
                     <table cellpadding="0" cellspacing="0" align="left" width="100%">
                       <tr>
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
-                          <img src="https://bitshift-m.netlify.app/bitshift_logo1s.gif" width="150" style="padding-bottom: 10px;"/>
+                          <img src="https://bitshift-m.netlify.app/bitshift_logo1.gif" width="150" style="padding-bottom: 10px;"/>
                           <p style"padding-bottom: 5px;">Follow us on: </p>
                           <a href="https://www.facebook.com/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
