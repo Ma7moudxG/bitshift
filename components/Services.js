@@ -54,7 +54,7 @@ export default function Services() {
           ))}
         </div>
         <div>
-          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/services')}>
+          <button className="bg-[#B6E89E] px-12 py-2 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/services')}>
             Learn More
           </button>
         </div>

@@ -41,10 +41,10 @@ export default function Hero() {
 
         {/* Centered buttons container */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-[600px] mx-auto mt-6 ">
-          <button className="bg-white px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white" onClick={() => router.push('/contact_us')}>
+          <button className="bg-white px-12 py-2 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white" onClick={() => router.push('/contact_us')}>
             Get Started
           </button>
-          <button className="bg-[#B6E89E] px-12 py-4 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white " onClick={() => router.push('/contact_us')} >
+          <button className="bg-[#B6E89E] px-12 py-2 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white " onClick={() => router.push('/contact_us')} >
             Learn More
           </button>
         </div>

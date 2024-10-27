@@ -62,7 +62,7 @@ export default function ContactUS() {
             training needs. Contact us today to discuss how we can create a
             tailored training program that meets your organization’s objectives.
           </p>
-          <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
+          <button className="flex  items-center gap-4 bg-[#B6E89E] px-12 py-2 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white ">
             Get Started
             <BsArrowRight className="text-xl font-semibold" />
           </button>
