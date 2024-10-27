@@ -12,7 +12,7 @@ export default function NewsPage({ params }) {
 
     return (
         <div className="flex flex-col p-8 sm:p-10 md:py-14 py-12 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
-            <h1 className="text-[#02033B] font-bold text-3xl lg:text-4xl md:pr-8 text-center">
+            <h1 className="text-[#02033B] font-bold text-2xl md:text-3xl lg:text-4xl md:pr-8 text-center">
                 {foundNews.title}
             </h1>
             <div className="w-full">

@@ -9,7 +9,7 @@ export default function NewsBlogs() {
     const router = useRouter()
   return (
         <div className="flex flex-col p-8 sm:p-10 md:py-14 py-12 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
-            <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl md:pr-8 text-centers">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8 text-centers">
                 NEWS & BLOGS
             </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

@@ -16,7 +16,7 @@ export default function CallToAction() {
           Contact us today to schedule a consultation and discover how we can
           help you Bitshift your processes for better performance.
         </p>
-        <button className="flex  items-center gap-4 bg-[#B6E89E] px-12 py-2 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
+        <button className="flex  items-center gap-4 bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
           Get Started
           <BsArrowRight className="text-xl font-semibold" />
         </button>

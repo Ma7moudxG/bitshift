@@ -51,7 +51,7 @@ export default function AboutUs() {
     const router = useRouter()
     return (
       <Main>
-        <div className="relative bg-[url('/about-us-banner1.jpg')] bg-center bg-cover h-[400px]">
+        <div className="relative bg-[url('/about-us-banner1.jpg')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
           <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
             <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
@@ -61,11 +61,11 @@ export default function AboutUs() {
           </div>
         </div>
   
-        <div className="max-w-[1200px] mx-auto md:py-14 py-8">
-          <div className="flex flex-col p-8 xl:p-0 md:py-14 py-8 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex flex-col text-left gap-8 justify-center">
-                <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl">
+        <div className="max-w-[1200px] mx-auto py-16">
+          <div className="flex flex-col max-w-[1200px] mx-auto items-center px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+              <div className="flex flex-col text-left gap-6 md:gap-8 lg:gap-10 justify-center">
+                <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl">
                   BITSHIFT&apos;S PURPOSE
                 </h1>
                 <p className="text-[#667085] sm:text-sm md:text-base lg:text-lg md:max-w-[400px] lg:max-w-[500px]">
@@ -90,9 +90,9 @@ export default function AboutUs() {
           </div>
         </div>
   
-        <div className="bg-[#F1F7FE] p-8 sm:p-10 md:py-14 py-12 flex flex-col gap-12">
-          <div className="flex flex-col md:flex-rowitems-center justify-between gap-6 max-w-[1200px] mx-auto">
-            <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl text-center">
+        <div className="bg-[#F1F7FE] py-16 flex flex-col gap-12">
+          <div className="flex flex-col md:flex-rowitems-center justify-between gap-6 md:gap-8 lg:gap-10 px-8 max-w-[1200px] mx-auto">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center">
               CORE VALUES
             </h1>
           </div>
@@ -120,9 +120,9 @@ export default function AboutUs() {
           </div>
         </div>
   
-        <div className="p-8 sm:p-10 md:py-14 py-12 flex flex-col gap-12">
-          <div className="flex flex-col md:flex-rowitems-center justify-between gap-6 max-w-[1200px] mx-auto">
-            <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl text-center">
+        <div className="px-8 py-16 flex flex-col gap-12">
+          <div className="flex flex-col md:flex-rowitems-cent er justify-between gap-6 md:gap-8 lg:gap-10 max-w-[1200px] mx-auto">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center">
               MEET OUR TEAM
             </h1>
             <p className="text-[#667085] md:text-base lg:text-lg text-center md:text-center md:max-w-[70%] mx-auto">
@@ -154,8 +154,8 @@ export default function AboutUs() {
   
         <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-          <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 xl:p-0 z-0">
-            <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
+          <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-10 md:gap-14 justify-center items-center px-8 z-0">
+          <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
               READY TO ELEVATE YOUR BUSINESS?
             </h1>
             <p className="text-white md:text-lg lg:text-xl text-center md:text-center md:max-w-[80%] mx-auto">
@@ -163,7 +163,7 @@ export default function AboutUs() {
               Bitshift can help you optimize your processes for better
               performance.
             </p>
-            <button className="flex  items-center gap-4 bg-[#B6E89E] px-16 py-3 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
+            <button className="flex  items-center gap-4 bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/contact_us')}>
               Get Started
               <BsArrowRight className="text-xl font-semibold" />
             </button>

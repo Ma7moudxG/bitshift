@@ -36,7 +36,7 @@ export default function Services() {
     <div className="bg-[#02033B]">
       <div className="bg-[#02033B] flex flex-col p-8 sm:p-10 md:py-14 py-12 items-center justify-between gap-14 md:gap-20 max-w-[1200px] mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
-          <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl md:pr-4">
+          <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-4">
                 WHAT <br className="hidden md:block"/>
                 <span>WE DO</span>
             </h1>
@@ -54,7 +54,7 @@ export default function Services() {
           ))}
         </div>
         <div>
-          <button className="bg-[#B6E89E] px-12 py-2 rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/services')}>
+          <button className="bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "  onClick={() => router.push('/services')}>
             Learn More
           </button>
         </div>

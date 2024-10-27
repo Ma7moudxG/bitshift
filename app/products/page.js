@@ -28,7 +28,7 @@ const benefits = [
 export default function Products() {
   return (
     <Main>
-      <header className="relative bg-[url('/products-bg.png')] bg-center bg-cover h-[400px]">
+      <header className="relative bg-[url('/products-bg.png')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px] ">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
@@ -39,12 +39,12 @@ export default function Products() {
 
       <div className="relative">
         <div className="relative mx-auto">
-          <div className="flex flex-col px-8 py-12 gap-5 mx-auto items-center relative bg-[#F1F7FE]">
+          <div className="flex flex-col px-8 py-12 gap-8 mx-auto items-center relative bg-[#F1F7FE]">
             {/* Split background */}
             <div className="absolute inset-0 bg-[#02033B] h-1/2 w-full top-0"></div>
             <div className="absolute inset-0 bg-[#02033B] h-1/2 w-full "></div>
 
-            <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl text-center z-0">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center z-0">
               CHAMPS
             </h1>
 
@@ -62,7 +62,7 @@ export default function Products() {
             </p>
 
             <button
-              className="z-0 flex items-center gap-4 bg-[#B6E89E] px-12 py-2 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white"
+              className="z-0 flex items-center gap-4 bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white"
               onClick={() => router.push("/contact_us")}
             >
               Get Started
@@ -74,9 +74,9 @@ export default function Products() {
 
       <div className="bg-white">
         <div className="max-w-[1200px] mx-auto py-12">
-          <div className="flex flex-col px-8 gap-8 max-w-[1200px] mx-auto items-center">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
             <div className="flex flex-col text-center gap-8 justify-center">
-              <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl mx-auto">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
                 Product Overview
               </h1>
               <p className="text-[#667085] sm:text-sm md:text-base lg:text-lg sm:max-w-[70%] md:max-w-[60%] mx-auto">
@@ -92,7 +92,7 @@ export default function Products() {
                 potential.
               </p>
             </div>
-            <div className="flex flex-col justify-start gap-8">
+            <div className="flex flex-col items-center gap-10 md:gap-14">
               <h3 className="text-lg font-semibold text-[#02033B] px-8">Key Benefits:</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {benefits.map((offering, index) => (

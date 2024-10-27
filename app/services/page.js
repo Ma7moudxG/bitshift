@@ -75,7 +75,7 @@ const Services = () => {
   const router = useRouter();
   return (
     <Main>
-      <div className="relative bg-[url('/services-banner.jpg')] bg-center bg-cover h-[400px]">
+      <div className="relative bg-[url('/services-banner.jpg')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
@@ -84,10 +84,10 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#02033B] md:py-14 py-8">
+      <div className="relative bg-[#02033B] py-16">
         <div className="relative smax-w-[1200px] mx-auto">
-          <div className="flex flex-col p-8 xl:p-0 md:py-14 py-8 gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
-            <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl md:pr-8 text-center">
+          <div className="flex flex-col gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8 text-center">
               Bitshift Your Business with Tailored IT Solutions
             </h1>
             <p className="text-white text-base sm:text-lg md:text-xl text-center md:max-w-[70%] lg:max-w-[80%]">
@@ -108,7 +108,7 @@ const Services = () => {
             </div>
 
             <button
-              className="flex  items-center gap-4 bg-[#B6E89E] px-12 py-2 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "
+              className="flex mt-4 items-center gap-4 bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "
               onClick={() => router.push("/contact_us")}
             >
               Book a discovery call
@@ -118,9 +118,9 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="bg-[#F1F7FE] p-8 sm:p-10 md:py-14 py-12 flex flex-col gap-12">
+      <div className="bg-[#F1F7FE] py-16 flex flex-col gap-10 md:gap-14">
         <div className="flex flex-col md:flex-rowitems-center justify-between gap-6 max-w-[1200px] mx-auto">
-          <h1 className="text-[#35BCDC] font-extrabold text-3xl lg:text-4xl text-center">
+          <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center">
             Why Choose Bitshift?
           </h1>
         </div>
@@ -148,9 +148,9 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
+      <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px] py-16">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 xl:p-0 z-0">
+        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-10 md:gap-14 justify-center items-center px-8 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
             READY TO ELEVATE YOUR BUSINESS?
           </h1>
@@ -160,7 +160,7 @@ const Services = () => {
             performance.
           </p>
           <button
-            className="flex  items-center gap-4 bg-[#B6E89E] px-12 py-2 text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "
+            className="flex items-center gap-4 bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white "
             onClick={() => router.push("/contact_us")}
           >
             Get Started
