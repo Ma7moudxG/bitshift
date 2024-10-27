@@ -19,9 +19,9 @@ const whys = [
 
 export default function WhyUs() {
   return (
-    <div className="bg-[#F1F7FE]">
-        <div className="flex flex-col md:flex-row p-8 sm:p-10 md:py-14 py-12 items-center justify-between gap-6 max-w-[1200px] mx-auto">
-            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8">
+    <div className="bg-[#F1F7FE] py-16 px-8 flex flex-col gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-10 max-w-[1200px] mx-auto">
+            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl">
                 WHY <br className="hidden md:block"/>
                 <span>CHOOSE</span> <br className="hidden md:block"/>
                 <span>US</span>
@@ -30,9 +30,9 @@ export default function WhyUs() {
                 At Bitshift, we stand out through our commitment to quality, extensive experience, and focus on innovation.
             </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 max-w-[1200px] mx-auto place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:max-w-[1200px] mx-auto gap-10 place-items-center">
             {whys.map((why, index) => (
-                <div key={index} className="flex flex-col gap-8 p-8 w-[305px] rounded-2xl items-center">
+                <div key={index} className="flex flex-col gap-8 px-8 lg:px-0 w-[305px] rounded-2xl items-center">
                     <Image 
                         src={why.url}
                         alt={why.url}

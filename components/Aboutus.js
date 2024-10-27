@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Aboutus() {
   return (
-    <div className="flex flex-col md:flex-row p-8 sm:p-10 md:py-14 py-12 items-center justify-between gap-6 max-w-[1200px] mx-auto">
+    <div className="flex flex-col md:flex-row p-8 py-16 items-center justify-between gap-8 max-w-[1200px] mx-auto">
         <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8">
             ABOUT <br className="hidden md:block"/>
             <span>US</span>

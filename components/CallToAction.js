@@ -6,13 +6,13 @@ import { BsArrowRight } from "react-icons/bs";
 export default function CallToAction() {
   const router = useRouter()
   return (
-    <div className="relative bg-[url('/call-to-action.avif')] bg-center bg-cover">
+    <div className="relative bg-[url('/call-to-action.avif')] bg-center bg-cover py-16">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
-      <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-12 z-0">
+      <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center px-8 z-0">
         <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
-          Ready to elevate your business?
+          READY TO ELEVATE YOUR BUSINESS?
         </h1>
-        <p className="text-white md:text-lg lg:text-xl text-center md:text-center md:max-w-[80%] mx-auto">
+        <p className="text-white md:text-lg lg:text-xl text-center md:text-center md:max-w-[80%] lg:max-w-[70%] mx-auto">
           Contact us today to schedule a consultation and discover how we can
           help you Bitshift your processes for better performance.
         </p>

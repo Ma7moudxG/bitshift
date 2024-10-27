@@ -33,9 +33,9 @@ const services = [
 export default function Services() {
   const router = useRouter()
   return (
-    <div className="bg-[#02033B]">
-      <div className="bg-[#02033B] flex flex-col p-8 sm:p-10 md:py-14 py-12 items-center justify-between gap-14 md:gap-20 max-w-[1200px] mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+    <div className="bg-[#02033B] py-16 px-8">
+      <div className="bg-[#02033B] flex flex-col items-center justify-between gap-6 md:gap-8 lg:gap-10 max-w-[1200px] mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-10 text-white">
           <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-4">
                 WHAT <br className="hidden md:block"/>
                 <span>WE DO</span>

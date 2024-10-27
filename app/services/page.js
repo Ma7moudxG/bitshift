@@ -84,7 +84,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#02033B] py-16">
+      <div className="relative bg-[#02033B] py-16 px-8">
         <div className="relative smax-w-[1200px] mx-auto">
           <div className="flex flex-col gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
             <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8 text-center">
@@ -96,7 +96,7 @@ const Services = () => {
               your operations, streamline processes, and drive innovation.
               Explore our key offerings below:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid-rows-2 max-w-[1200px] gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 max-w-[1200px] gap-8">
               {services.map((service, index) => (
                 <ServiceCardDetailed
                   key={index}
