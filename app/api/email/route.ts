@@ -87,18 +87,6 @@ const autoResponseEmail = `
                       <tr>
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
                           <img src="https://bitshift-m.netlify.app/bitshift_logo1.gif" width="150" style="padding-bottom: 10px;"/>
-                          <p style"padding-bottom: 5px;">Follow us on: </p>
-                          <a href="https://www.facebook.com/" target="_blank">
-                            <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
-                          </a>
-                          <a href="https://twitter.com/" target="_blank">
-                            <img src="https://bitshift-m.netlify.app/icons/email/twitter.png" alt="Twitter" width="24" height="24" style="margin-right: 10px;">
-                          </a>
-                          <a href="https://www.youtube.com/" target="_blank">
-                            <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
-                          </a>
-                          <br />
-
                           <div style="display: flex; align-items: center; padding-bottom: 5px;">
                             <img src="https://bitshift-m.netlify.app/icons/email/phone.png" alt="Facebook" width="18"  style="margin-right: 10px;"> 
                             (+2) 010 12345 4569
@@ -111,6 +99,19 @@ const autoResponseEmail = `
                             <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="LinkedIn" width="18"  style="margin-right: 10px;">
                             Maadi, Cairo, EG
                           </div>
+                          
+                          <br />
+
+                          <p style"padding-bottom: 5px;">Follow us on: </p>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
+                          </a>
+                          <a href="https://twitter.com/" target="_blank">
+                            <img src="https://bitshift-m.netlify.app/icons/email/twitter.png" alt="Twitter" width="24" height="24" style="margin-right: 10px;">
+                          </a>
+                          <a href="https://www.youtube.com/" target="_blank">
+                            <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
+                          </a>
                         </td>
                       </tr>
                     </table>

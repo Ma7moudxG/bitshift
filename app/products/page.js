@@ -12,18 +12,56 @@ import { BsArrowRight } from "react-icons/bs";
 
 const benefits = [
   {
-    title:"Comprehensive Management",
-    description: "Simplifies administrative tasks, allowing coaches and staff to focus on training and development."
+    title: "Comprehensive Management",
+    description:
+      "Simplifies administrative tasks, allowing coaches and staff to focus on training and development.",
   },
   {
-    title:"Data-Driven Insights",
-    description: "Provides athletes with detailed analytics to track their performance and progress over time."
+    title: "Data-Driven Insights",
+    description:
+      "Provides athletes with detailed analytics to track their performance and progress over time.",
   },
   {
-    title:"Communication Tools",
-    description: "Facilitate seamless communication between coaches, athletes, and parents through integrated messaging systems."
+    title: "Communication Tools",
+    description:
+      "Facilitate seamless communication between coaches, athletes, and parents through integrated messaging systems.",
   },
-]
+];
+
+const features = [
+  {
+    title: "Automated Scheduling",
+    description:
+      "Streamline practice schedules, games, and events with our intuitive calendar system.",
+  },
+  {
+    title: "Performance Analytics",
+    description:
+      "Access real-time data on athlete performance, including metrics like speed, endurance, and skill development.",
+  },
+  {
+    title: "Communication Tools",
+    description:
+      "Facilitate seamless communication between coaches, athletes, and parents through integrated messaging systems.",
+  },
+];
+const cases = [
+  {
+    title: "Team Management",
+    description:
+      "Coaches can easily manage team rosters, schedules, and communication from one platform.",
+  },
+  {
+    title: "Athlete Development",
+    description:
+      "Athletes receive personalized training plans based on performance data and analytics.",
+  },
+  {
+    title: "Event Coordination",
+    description:
+      "Organize tournaments and events efficiently with automated scheduling tools.",
+  },
+];
 
 export default function Products() {
   return (
@@ -39,10 +77,10 @@ export default function Products() {
 
       <div className="relative">
         <div className="relative mx-auto">
-          <div className="flex flex-col px-8 py-12 gap-8 mx-auto items-center relative bg-[#F1F7FE]">
+          <div className="flex flex-col px-8 py-12 gap-8 mx-auto items-center relative bg-[#02033B]">
             {/* Split background */}
-            <div className="absolute inset-0 bg-[#02033B] h-1/2 w-full top-0"></div>
-            <div className="absolute inset-0 bg-[#02033B] h-1/2 w-full "></div>
+            <div className="absolute inset-0 bg-[#F1F7FE] h-1/2 w-full top-0"></div>
+            <div className="absolute inset-0 bg-[#F1F7FE] h-1/2 w-full "></div>
 
             <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center z-0">
               CHAMPS
@@ -56,7 +94,7 @@ export default function Products() {
               className="z-0"
             />
 
-            <p className="z-0 text-[#667085] md:text-base lg:text-lg text-center max-w-[80%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[40%] xl:max-w-[30%] mx-auto">
+            <p className="z-0 text-white md:text-base lg:text-lg text-center max-w-[80%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[40%] xl:max-w-[30%] mx-auto">
               The All-in-One Sports Platform for Coaches, Administrators, and
               Athletes
             </p>
@@ -73,7 +111,7 @@ export default function Products() {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-[1200px] mx-auto py-12">
+        <div className="max-w-[1200px] mx-auto py-16">
           <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
             <div className="flex flex-col text-center gap-8 justify-center">
               <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
@@ -93,7 +131,9 @@ export default function Products() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-10 md:gap-14">
-              <h3 className="text-lg font-semibold text-[#02033B] px-8">Key Benefits:</h3>
+              <h3 className="text-lg font-semibold text-[#02033B] px-8">
+                Key Benefits:
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {benefits.map((offering, index) => (
                   <div
@@ -112,6 +152,133 @@ export default function Products() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="bg-[#F1F7FE] flex flex-col gap-12 py-16">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
+            <div className="flex flex-col text-center gap-8 justify-center">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
+                Features
+              </h1>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10 md:gap-14">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-col gap-4 lg:w-[50%]">
+                {features.map((offering, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col gap-4 rounded-2xl items-start bg-white p-8 lg:justify-between"
+                  >
+                    <h1 className="text-lg md:text-xl font-extrabold text-[#02033B]">
+                      {offering.title}
+                    </h1>
+                    <p className="text-[#2E2F35] text-sm md:text-base">
+                      {offering.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <Image
+                  src="/laptop-dashboard-champ.png"
+                  alt="Laptop Dashboard Champ"
+                  width={600}
+                  height={432}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
+            <div className="flex flex-col text-center gap-8 justify-center">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
+                Specifications
+              </h1>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-start gap-10 md:gap-14">
+              <div className="flex flex-col gap-4 w-full lg:w-[60%]">
+                <div className="flex gap-4">
+                  <h1 className="w-[25%] text-md lg:text-base font-bold text-[#02033B]">
+                    User Roles
+                  </h1>
+                  <p className="w-[75%] text-xs lg:text-sm text-[#2E2F35]">
+                    Coaches, Athletes, Administrators
+                  </p>
+                </div>
+                <div className="flex gap-4">
+                  <h1 className="w-[25%] text-md lg:text-base font-bold text-[#02033B]">
+                    Supported <br />
+                    Sports
+                  </h1>
+                  <p className="w-[75%] text-xs lg:text-sm text-[#2E2F35]">
+                    Football, Basketball, Soccer, Track & Field, and more
+                  </p>
+                </div>
+                <div className="flex gap-4">
+                  <h1 className="w-[25%] text-md lg:text-base font-bold text-[#02033B]">
+                    Analytics <br />
+                    Type
+                  </h1>
+                  <p className="w-[75%] text-xs lg:text-sm text-[#2E2F35]">
+                    Performance Tracking, Progress Reports
+                  </p>
+                </div>
+                <div className="flex gap-4">
+                  <h1 className="w-[25%] text-md lg:text-base font-bold text-[#02033B]">
+                    Integration
+                  </h1>
+                  <p className="w-[75%] text-xs lg:text-sm text-[#2E2F35]">
+                    Compatible with various fitness trackers and wearables
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full lg:w-[40%]">
+                <Image
+                  src="/mobile-mockup-champ.png"
+                  alt="Mobile Mockup Champ"
+                  width={600}
+                  height={432}
+                  className="w-[60%] md:w-[80%]   mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
+            <div className="flex flex-col text-center gap-8 justify-center">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
+                Use Cases
+              </h1>
+              <h3 className="text-[#02033B] font-bold text-lg md:text-xl mx-auto">
+                Champs is perfect for
+              </h3>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10 md:gap-14">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {cases.map((offering, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col gap-4 rounded-2xl items-start bg-white p-8"
+                  >
+                    <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B]">
+                      {offering.title}
+                    </h1>
+                    <p className="text-[#2E2F35] text-sm md:text-base">
+                      {offering.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </Main>
   );
