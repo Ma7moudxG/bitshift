@@ -12,7 +12,7 @@ import { BsArrowRight } from "react-icons/bs";
 export default function ContactUS() {
   return (
     <Main>
-      <div className="relative bg-[url('/contact_us_bg.jpg')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
+      <div className="relative bg-[url('/contact_us_bg.avif')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
@@ -38,7 +38,7 @@ export default function ContactUS() {
         <ContactFormT />
       </div>
 
-      <div className="bg-white p-8 sm:p-10 md:py-14 py-12 flex flex-col gap-12">
+      {/* <div className="bg-white p-8 sm:p-10 md:py-14 py-12 flex flex-col gap-12">
         <div className="flex flex-col md:flex-rowitems-center justify-between gap-6 max-w-[1200px] mx-auto">
           <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center">
             Why Choose Bitshift?
@@ -49,9 +49,9 @@ export default function ContactUS() {
             ensure your inquiries are addressed effectively.
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
+      {/* <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-8 justify-center items-center p-8 xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">
@@ -67,7 +67,7 @@ export default function ContactUS() {
             <BsArrowRight className="text-xl font-semibold" />
           </button>
         </div>
-      </div>
+      </div> */}
     </Main>
   );
 }

@@ -60,7 +60,7 @@ export default function Training() {
   const router = useRouter()
   return (
     <Main>
-      <div className="relative bg-[url('/training-bg.jpg')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
+      <div className="relative bg-[url('/training-bg.avif')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-left">
@@ -87,7 +87,7 @@ export default function Training() {
               </div>
               <div className="flex flex-col justify-center">
                 <Image
-                  src="/empower-your-team-with-expert-training.jpg"
+                  src="/empower-your-team-with-expert-training.avif"
                   alt="Empower Your Team with Expert Training image"
                   width={600}
                   height={432}
@@ -154,7 +154,7 @@ export default function Training() {
         </div>
       </div>
 
-      <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px]">
+      <div className="relative bg-[url('/call-to-action-elevate.avif')] bg-center bg-cover h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-10 md:gap-14 justify-center items-center px-8 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">

@@ -75,7 +75,7 @@ const Services = () => {
   const router = useRouter();
   return (
     <Main>
-      <div className="relative bg-[url('/services-banner.jpg')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
+      <div className="relative bg-[url('/services-banner.avif')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center p-8 xl:justify-start xl:p-0 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
@@ -84,16 +84,23 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative bg-[#02033B] py-16 px-8">
-        <div className="relative smax-w-[1200px] mx-auto">
-          <div className="flex flex-col gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
-            <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl md:pr-8 text-center">
-              Bitshift Your Business with Tailored IT Solutions
-            </h1>
-            <p className="text-white text-base sm:text-lg md:text-xl text-center md:max-w-[70%] lg:max-w-[80%]">
+      <div className="bg-[#F1F7FE] py-16 ">
+        <div className="flex flex-col gap-4 max-w-[1200px] mx-auto px-8">
+          <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl text-center mx-auto">
+            Bitshift Your Business with Tailored IT Solutions
+          </h1>
+          <p className="text-[#2E2F35] text-base sm:text-lg md:text-xl text-center md:max-w-[70%] lg:max-w-[80%] mx-auto">
               At Bitshift, we understand that every business is unique. That is
               why we offer a comprehensive suite of services designed to enhance
               your operations, streamline processes, and drive innovation.
+            </p>
+        </div>
+      </div>
+
+      <div className="relative bg-[#02033B] py-16 px-8">
+        <div className="relative smax-w-[1200px] mx-auto">
+          <div className="flex flex-col gap-10 md:gap-14 max-w-[1200px] mx-auto items-center">
+            <p className="text-white text-lg sm:text-xl md:text-2xl text-center md:max-w-[70%] lg:max-w-[80%]">
               Explore our key offerings below:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 max-w-[1200px] gap-8">
@@ -148,7 +155,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="relative bg-[url('/call-to-action-elevate.jpg')] bg-center bg-cover h-[400px] py-16">
+      <div className="relative bg-[url('/call-to-action-elevate.avif')] bg-center bg-cover h-[400px] py-16">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-10 md:gap-14 justify-center items-center px-8 z-0">
           <h1 className="text-white font-extrabold text-4xl lg:text-5xl text-center">

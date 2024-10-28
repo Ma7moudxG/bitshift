@@ -44,7 +44,7 @@ export default function Hero() {
           <button className="bg-white px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white" onClick={() => router.push('/contact_us')}>
             Get Started
           </button>
-          <button className="bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white " onClick={() => router.push('/contact_us')} >
+          <button className="bg-[#B6E89E] px-12 md:px-14 py-2 md:py-3 text-base md:text-lg rounded-full text-[#02033B] font-bold hover:bg-[#35BCDC] hover:text-white " onClick={() => router.push('/services')} >
             Learn More
           </button>
         </div>
