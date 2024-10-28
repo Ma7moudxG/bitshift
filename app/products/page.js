@@ -9,6 +9,8 @@ import Image from "next/image";
 import Main from "../../components/Main";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const benefits = [
   {
@@ -64,6 +66,7 @@ const cases = [
 ];
 
 export default function Products() {
+  const router = useRouter()
   return (
     <Main>
       <header className="relative bg-[url('/products-bg.avif')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px] ">
@@ -89,8 +92,8 @@ export default function Products() {
             <Image
               src="/website-and-mobile-app-mockup.png"
               alt="website and mobile app mockup"
-              width={600}
-              height={600}
+              width={800}
+              height={800}
               className="z-0"
             />
 
@@ -117,7 +120,7 @@ export default function Products() {
               <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
                 Product Overview
               </h1>
-              <p className="text-[#667085] sm:text-sm md:text-base lg:text-lg sm:max-w-[70%] md:max-w-[60%] mx-auto">
+              <p className="text-[#667085] sm:text-sm md:text-base lg:text-lg max-w-[90%] md:max-w-[80%] mx-auto">
                 Champs is an end-to-end sports platform designed to automate and
                 streamline the daily operations of coaches, administration, and
                 athletes. <br />
@@ -277,8 +280,107 @@ export default function Products() {
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="bg-white flex flex-col gap-12 py-16">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
+            <div className="flex flex-col text-center gap-8 justify-center">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
+                Customer Testimonials
+              </h1>
+            </div>
+            <div className="relative flex gap-10 md:gap-14 max-w-[565px] items-start rounded-2xl p-8 bg-[#F1F7FE]">
+              {/* Quote Icon */}
+              <Image
+                src="/icons/quote.svg"
+                alt="quote"
+                width={90}
+                height={60}
+                className="absolute top-[-30px] right-[-1px]"
+              />
+              {/* Testimonial Content */}
+              <div className="flex flex-col gap-4 items-start">
+                <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B]">
+                  Sarah T.
+                </h1>
+                <h3 className="text-base md:text-lg font-semibold text-[#2E2F35]">
+                  Head Coach
+                </h3>
+                <p className="text-[#2E2F35] text-sm md:text-base">
+                  Champs has transformed how we manage our team. The insights we
+                  get help our athletes improve every day!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div className="bg-[#02033B] flex flex-col gap-12 py-16">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex flex-col px-8 gap-12 max-w-[1200px] mx-auto items-center">
+            <div className="flex flex-col text-center gap-8 justify-center">
+              <h1 className="text-[#35BCDC] font-extrabold text-2xl md:text-3xl lg:text-4xl mx-auto">
+                FAQs
+              </h1>
+            </div>
+            <div className="flex flex-col gap-10 md:gap-14  items-start  ">
+              <div className="flex flex-col gap-4 items-start p-8 bg-white max-w-[1010px] rounded-2xl w-full">
+                <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B]">
+                  What is Champs?
+                </h1>
+                <p className="text-[#2E2F35] text-sm md:text-base">
+                  Champs is a comprehensive sports platform that automates daily
+                  operations for coaches, administrators, and athletes while
+                  providing in-depth analytics for performance tracking.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4 items-start p-8 bg-white max-w-[1010px] rounded-2xl w-full">
+                <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B]">
+                  Which sports does Champs support?
+                </h1>
+                <p className="text-[#2E2F35] text-sm md:text-base">
+                  Champs supports a wide range of sports including football,
+                  basketball, soccer, track & field, and more.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4 items-start p-8 bg-white max-w-[1010px] rounded-2xl w-full">
+                <h1 className="text-xl md:text-2xl font-extrabold text-[#02033B]">
+                  Is there a free trial available?
+                </h1>
+                <p className="text-[#2E2F35] text-sm md:text-base">
+                  Yes! We offer a 30-day free trial so you can explore all
+                  features of Champs before committing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative bg-[url('/call-to-action-elevate.avif')] bg-center bg-cover h-[400px]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#02033B] z-0"></div>
+        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col gap-6 md:gap-8 justify-center items-center px-8 z-0">
+          <h1 className="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl text-center">
+            CONTACT INFORMATION
+          </h1>
+          <div className="flex flex-col gap-4 items-center text-center font-semibold text-xl lg:text-2xl text-white">
+            <p className=" md:max-w-[75%] mx-auto">
+              For support inquiries, please reach out to our customer service
+              team at
+            </p>
+            <Link href="mailto:support@bitshift.com" className="underline hover:text-[#bbcadb] text-2xl lg:text-3xl">
+              support@bitshift.com
+            </Link>
+            <p className=" md:max-w-[80%] mx-auto">
+              or call us at
+            </p>
+            <p className=" md:max-w-[80%] mx-auto text-2xl lg:text-3xl">
+              (123) 456-7890
+            </p>
+          </div>
+        </div>
       </div>
     </Main>
   );
