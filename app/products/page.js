@@ -66,7 +66,7 @@ const cases = [
 ];
 
 export default function Products() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <Main>
       <header className="relative bg-[url('/products-bg.avif')] bg-center bg-cover h-[200px] md:h-[300px] lg:h-[400px] ">
@@ -370,12 +370,13 @@ export default function Products() {
               For support inquiries, please reach out to our customer service
               team at
             </p>
-            <Link href="mailto:support@bitshift.com" className="underline hover:text-[#bbcadb] text-2xl lg:text-3xl">
+            <Link
+              href="mailto:support@bitshift.com"
+              className="underline hover:text-[#bbcadb] text-2xl lg:text-3xl"
+            >
               support@bitshift.com
             </Link>
-            <p className=" md:max-w-[80%] mx-auto">
-              or call us at
-            </p>
+            <p className=" md:max-w-[80%] mx-auto">or call us at</p>
             <p className=" md:max-w-[80%] mx-auto text-2xl lg:text-3xl">
               (123) 456-7890
             </p>
