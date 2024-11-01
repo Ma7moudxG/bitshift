@@ -383,6 +383,17 @@ export default function Products() {
           </div>
         </div>
       </div>
+
+      <div className="relative bg-[#F1F7FE] py-12">
+        <div className="relative max-w-[1200px] mx-auto h-full flex flex-col px-8 z-0">
+          <Link href="/products/privacy">
+          <h1 className="text-[#02033B] font-semibold underline hover:text-[#35BCDC] text-lg text-center">
+            CHAMPS Privacy Ploicy
+          </h1>
+          </Link>
+          
+        </div>
+      </div>
     </Main>
   );
 }

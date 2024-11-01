@@ -151,7 +151,7 @@ export default function AboutUs() {
             <h2 className="text-[#02033B] font-semibold text-base">
               Our Vision
             </h2>
-            <p>
+            <p className="max-w-[80%] mx-auto">
               To lead in digital transformation by merging technology with
               financial strategy to drive growth and innovation.
             </p>
@@ -159,11 +159,14 @@ export default function AboutUs() {
             <h2 className="text-[#02033B] font-semibold text-base">
               Our Mission
             </h2>
-            <p>
+            <p className="max-w-[80%] mx-auto">
               To empower businesses with advanced technology solutions for
-              sustainable growth. <br />
+              sustainable growth. 
+              </p>
+              <br />
+              <p className="max-w-[80%] mx-auto text-[#02033B] font-medium">
               Partnering with us enables confident navigation through the
-              digital landscape for measurable success.
+              digital landscape for measurable success.
             </p>
           </div>
         </div>
