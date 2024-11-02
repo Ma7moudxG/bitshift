@@ -119,7 +119,7 @@ export default function NewsBlogs() {
                                     onClick={() => router.push(`/blogs/${blog.id}`)}> 
                                     {blog.title}
                                 </h1>
-                                <p className="text-[#667085] text-sm">{blog.description}</p>
+                                <div className='line-clamp-3 text-[#667085] text-sm' dangerouslySetInnerHTML={{ __html: blog.description }} />
                             </div>
                             </div>
                         ))}

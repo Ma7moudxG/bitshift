@@ -13,7 +13,7 @@ const whys = [
     },{
       title: 'Innovation',
       url: '/icons/whyus/innovation.svg',
-      description: 'We uphold high standards in every project, ensuring client satisfaction'
+      description: 'We leverage emerging technologies to deliver adaptive solutions.'
     }
   ]
 

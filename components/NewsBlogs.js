@@ -61,7 +61,7 @@ export default function NewsBlogs() {
                                     {blog.title}
                                 </h1>
 
-                                <p className="text-[#667085] text-sm">{blog.description}</p>
+                                <div className='line-clamp-4 text-[#667085] text-sm' dangerouslySetInnerHTML={{ __html: blog.description }} />
                             </div>
                         </div>
                     ))}
