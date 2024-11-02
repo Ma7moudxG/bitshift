@@ -48,10 +48,11 @@ const profiles = [
 ];
 
 const experties = [
-  "DevOps",
+  "Software Development",
   "Cybersecurity",
-  "Agile project management",
-  "Cloud solutions",
+  "Agile Project Management",
+  "Cloud Solutions",
+  "DevOps",
   "FinOps",
 ];
 
@@ -137,7 +138,7 @@ export default function AboutUs() {
             With over 20 years in IT and financial strategy, we specialize in
             digital transformation, focusing on:
             <br />
-            <div className="flex flex-wrap gap-2 items-center justify-center py-4 mx-auto">
+            <div className="flex flex-wrap gap-2 items-center justify-center py-4 mx-auto lg:max-w-[80%]">
               {experties.map((item, index) => (
                 <div
                   key={index}
