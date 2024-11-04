@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { news } from "../../../components/news";
 import Image from "next/image";
@@ -27,11 +28,11 @@ export default function NewsPage({ params }) {
           />
           <div className="flex flex-col gap-4">
             <p className="text-[#35BCDC] text-xs">
-              {foundNews.author} • {foundNews.date}
+              {foundNews.date}
             </p>
             <div
               className="text-[#667085] text-sm"
-              dangerouslySetInnerHTML={{ __html: foundBlog.description }}
+              dangerouslySetInnerHTML={{ __html: foundNews.description }}
             />
           </div>
           <button

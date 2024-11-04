@@ -29,7 +29,7 @@ export default function BlogPage({ params }) {
             />
             <div className="flex flex-col gap-4">
               <p className="text-[#35BCDC] text-xs">
-                {foundBlog.author} • {foundBlog.date}
+                {foundBlog.date}
               </p>
               <div
                 className="text-[#667085] text-sm"

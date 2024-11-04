@@ -42,7 +42,7 @@ export default function NewsBlogs() {
                         objectFit='cover'
                     />
                     <div className="flex flex-col gap-4">
-                        <p className="text-[#35BCDC] text-sm">{news[0].author} • {news[0].date}</p>
+                        <p className="text-[#35BCDC] text-sm">{news[0].date}</p>
                         <div className="flex justify-between">
                             <h1 className="font-bold text-lg hover:text-[#35BCDC] cursor-pointer" onClick={() => router.push(`/news/${news[0].id}`)}>{news[0].title}</h1>
                             <Image 
@@ -75,7 +75,7 @@ export default function NewsBlogs() {
                             </div>
 
                             <div className="flex flex-col gap-2">
-                                <p className="text-[#35BCDC] text-xs">{blog.author} • {blog.date}</p>
+                                <p className="text-[#35BCDC] text-xs">{blog.date}</p>
 
                                 {/* Truncate title after two lines */}
                                 <h1 className="font-bold text-base line-clamp-2 overflow-ellipsis hover:text-[#35BCDC] cursor-pointer" onClick={() => router.push(`/news/${blog.id}`)}>
@@ -112,7 +112,7 @@ export default function NewsBlogs() {
                             </div>
 
                             <div className="flex flex-col gap-2">
-                                <p className="text-[#35BCDC] text-xs">{blog.author} • {blog.date}</p>
+                                <p className="text-[#35BCDC] text-xs">{blog.date}</p>
 
                                 {/* Truncate title after two lines */}
                                 <h1 className="font-bold text-base line-clamp-2 overflow-ellipsis hover:text-[#35BCDC] cursor-pointer" 

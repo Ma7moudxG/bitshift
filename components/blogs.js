@@ -2,7 +2,6 @@ export const blogs = [
   {
     id: 1,
     title: "The Cost Benefits of IT Outsourcing for your Business",
-    author: "Phoenix Baker",
     date: "11 Jan 2024",
     description: `In today's competitive landscape, UK businesses are increasingly turning to IT outsourcing as a strategic move to reduce costs and enhance operational efficiency. According to Deloitte’s Global Outsourcing Survey 2022, companies can save up to <b>30%</b> on operational costs by outsourcing various functions, including IT support. This savings comes from lower labor costs, increased efficiency, and access to specialized skills and technology. For instance, the average cost of maintaining an in-house IT team can be substantial. Businesses with <b>1-10 employees</b> spend approximately <b>£23 per hour</b> on IT support, while larger firms with over <b>100 employees</b> may incur costs of around <b>£32 per hour</b>
 <br /><br />
@@ -17,7 +16,6 @@ Learn More about how Bitshift can effectively handle your IT operations while re
   {
     id: 2,
     title: "Enhancing Cybersecurity through IT Outsourcing",
-    author: "Olivia Rhye",
     date: "12 Jan 2024",
     description:
       `As cyber threats continue to rise, UK businesses must prioritize robust cybersecurity measures. Outsourcing IT security can provide a comprehensive solution that not only enhances protection but also reduces costs. Recent studies indicate that companies can save up to <b>70%</b> on operational costs by outsourcing their IT services, including cybersecurity measures.
@@ -35,7 +33,6 @@ Learn More about how Bitshift can effectively enhance your Cybersecurity while a
   {
     id: 3,
     title: "Navigating Digital Transformation: The Role of IT Outsourcing",
-    author: "Phoenix Baker",
     date: "13 Jan 2024",
     description:
       `Digital transformation is essential for UK businesses aiming to remain competitive in today's fast-paced market. However, the complexities involved can be daunting. Outsourcing IT services plays a pivotal role in facilitating this transformation by providing access to specialized skills and technologies that may not be available in-house. According to Deloitte's Global Outsourcing Survey 2022, <b>76%</b> of companies outsource some aspect of their IT functions

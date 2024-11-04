@@ -22,7 +22,7 @@ export default function NewsBlogs() {
                         layout="responsive"
                     />
                     <div className="flex flex-col gap-4">
-                        <p className="text-[#35BCDC] text-xs">{news[0].author} • {news[0].date}</p>
+                        <p className="text-[#35BCDC] text-xs">{news[0].date}</p>
                         <div className="flex justify-between">
                             <h1 
                                 className="font-bold text-base hover:text-[#35BCDC] cursor-pointer" 
@@ -54,7 +54,7 @@ export default function NewsBlogs() {
                                 />
                             </div>
                             <div className="flex flex-col gap-4">
-                                <p className="text-[#35BCDC] text-xs">{blog.author} • {blog.date}</p>
+                                <p className="text-[#35BCDC] text-xs">{blog.date}</p>
                                 <h1 
                                     className="font-bold text-base hover:text-[#35BCDC] cursor-pointer" 
                                     onClick={() => router.push(`/blogs/${blog.id}`)}> 
