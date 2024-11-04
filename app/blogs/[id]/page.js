@@ -20,17 +20,17 @@ export default function BlogPage({ params }) {
         </h1>
         <div className="w-full">
           <div className="flex flex-col gap-6 w-full">
-            <Image
-              src={foundBlog.url}
-              alt={foundBlog.title}
-              height={432}
-              width={592}
-              layout="responsive"
-            />
+            <div className="w-full h-[400px] relative">
+              <Image
+                src={foundBlog.url}
+                alt={foundBlog.title}
+                layout="fill" // Use 'fill' to make the image cover the parent div
+                objectFit="cover" // Ensures the image covers the div and is responsive
+                objectPosition="center" // Centers the image inside the container
+              />
+            </div>
             <div className="flex flex-col gap-4">
-              <p className="text-[#35BCDC] text-xs">
-                {foundBlog.date}
-              </p>
+              <p className="text-[#35BCDC] text-xs">{foundBlog.date}</p>
               <div
                 className="text-[#667085] text-sm"
                 dangerouslySetInnerHTML={{ __html: foundBlog.description }}
