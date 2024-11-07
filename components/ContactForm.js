@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import {
+  FaLinkedin,
   FaSquareFacebook,
   FaSquareTwitter,
   FaSquareYoutube,
@@ -74,6 +75,9 @@ export default function ContactForm() {
           <div>
             <p className="text-left text-sm">Follow us on Social Media</p>
             <div className="flex items-start space-x-4 mt-4">
+              <Link href="#">
+                <FaLinkedin  className="text-3xl hover:text-[#4371c7] cursor-pointer" />
+              </Link>
               <Link href="#">
                 <FaSquareTwitter className="text-3xl hover:text-slate-700 cursor-pointer" />
               </Link>

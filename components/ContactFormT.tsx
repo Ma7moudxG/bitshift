@@ -4,7 +4,9 @@ import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "../app/utils/send-email";
 import {
+  FaLinkedin,
   FaSquareFacebook,
+  FaSquareInstagram,
   FaSquareTwitter,
   FaSquareYoutube,
 } from "react-icons/fa6";
@@ -72,15 +74,10 @@ const ContactFormT: FC = () => {
           <div>
             <p className="text-left text-sm">Follow us on Social Media</p>
             <div className="flex items-start space-x-4 mt-4">
-              <Link href="#">
-                <FaSquareTwitter className="text-3xl hover:text-slate-700 cursor-pointer" />
-              </Link>
-              <Link href="#">
-                <FaSquareFacebook className="text-3xl hover:text-[#4371c7] cursor-pointer" />
-              </Link>
-              <Link href="#">
-                <FaSquareYoutube className="text-3xl hover:text-red-600 cursor-pointer" />
-              </Link>
+              <Link href="https://www.linkedin.com/company/105454537" target="_blank"> <FaLinkedin  className="text-[#35BCDC] hover:text-white text-3xl cursor-pointer" /> </Link>
+              <Link href="https://www.instagram.com/bitshift_technology/" target="_blank"><FaSquareInstagram className="text-[#35BCDC] text-3xl hover:text-white cursor-pointer"/></Link>
+              <Link href="https://www.facebook.com/share/BvY6Aw9yLgLDrbVx/" target="_blank"><FaSquareFacebook className="text-[#35BCDC] text-3xl hover:text-white cursor-pointer"/></Link>
+              <Link href="https://www.youtube.com/@Bitshift-o8o" target="_blank"><FaSquareYoutube className="text-[#35BCDC] text-3xl hover:text-white cursor-pointer"/></Link>
             </div>
           </div>
         </div>

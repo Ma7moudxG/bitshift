@@ -103,13 +103,19 @@ const autoResponseEmail = `
                           <br />
 
                           <p style"padding-bottom: 5px;">Follow us on: </p>
-                          <a href="https://www.facebook.com/" target="_blank">
+                          <a href="https://www.linkedin.com/company/105454537" target="_blank">
+                            <img src="https://bitshift-m.netlify.app/icons/email/linkedin.png" alt="Linkedin" width="24" height="24" style="margin-right: 10px;">
+                          </a>
+                          
+                          <a href="https://www.instagram.com/bitshift_technology/" target="_blank">
+                            <img src="https://bitshift-m.netlify.app/icons/email/instagram.png" alt="Instagram" width="24" height="24" style="margin-right: 10px;">
+                          </a>
+                          
+                          <a href="https://www.facebook.com/share/BvY6Aw9yLgLDrbVx/" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/facebook.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
                           </a>
-                          <a href="https://twitter.com/" target="_blank">
-                            <img src="https://bitshift-m.netlify.app/icons/email/twitter.png" alt="Twitter" width="24" height="24" style="margin-right: 10px;">
-                          </a>
-                          <a href="https://www.youtube.com/" target="_blank">
+                          
+                          <a href="https://www.youtube.com/@Bitshift-o8o" target="_blank">
                             <img src="https://bitshift-m.netlify.app/icons/email/youtube.png" alt="LinkedIn" width="24" height="24" style="margin-right: 10px;">
                           </a>
                         </td>

@@ -6,7 +6,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
-import { FaSquareFacebook, FaSquareTwitter, FaSquareYoutube } from "react-icons/fa6";
+import { FaLinkedin, FaSquareFacebook, FaSquareInstagram, FaSquareTwitter, FaSquareYoutube } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -34,9 +34,10 @@ export default function FooterComponent() {
           <div className="text-center items-center">
             <FooterTitle title="DO IT BETTER" className="text-lg font-bold text-[#02033B]" />
             <div className="flex justify-center space-x-4 mt-4">
-              <Link href="#"><FaSquareTwitter className="text-[#35BCDC] text-5xl hover:text-black cursor-pointer"/></Link>
-              <Link href="#"><FaSquareFacebook className="text-[#35BCDC] text-5xl hover:text-[#4371c7] cursor-pointer"/></Link>
-              <Link href="#"><FaSquareYoutube className="text-[#35BCDC] text-5xl hover:text-red-600 cursor-pointer"/></Link>
+            <Link href="https://www.linkedin.com/company/105454537" target="_blank"> <FaLinkedin  className="text-[#35BCDC] hover:text-[#02033B] text-4xl cursor-pointer" /> </Link>
+              <Link href="https://www.instagram.com/bitshift_technology/" target="_blank"><FaSquareInstagram className="text-[#35BCDC] text-4xl hover:text-[#02033B] cursor-pointer"/></Link>
+              <Link href="https://www.facebook.com/share/BvY6Aw9yLgLDrbVx/" target="_blank"><FaSquareFacebook className="text-[#35BCDC] text-4xl hover:text-[#02033B] cursor-pointer"/></Link>
+              <Link href="https://www.youtube.com/@Bitshift-o8o" target="_blank"><FaSquareYoutube className="text-[#35BCDC] text-4xl hover:text-[#02033B] cursor-pointer"/></Link>
             </div>
             <div className="flex flex-col md:flex-row justify-center gap-2 mt-4 md:items-end">
               <Link href="/privacy" target="_blank" className="text-xs text-[#667085] hover:underline hover:text-[#b3b3b3]">Privacy Policy</Link>
