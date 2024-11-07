@@ -97,7 +97,7 @@ const autoResponseEmail = `
                           </a>
                           <div style="display: flex; align-items: center;">
                             <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="LinkedIn" width="18"  style="margin-right: 10px;">
-                            Maadi, Cairo, EG
+                            Ras Alkhaima, UAE
                           </div>
                           
                           <br />

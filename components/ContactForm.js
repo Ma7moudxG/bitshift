@@ -60,15 +60,15 @@ export default function ContactForm() {
             <div className="flex flex-col items-start gap-8 text-white">
               <Link href="#" className="text-sm flex items-center gap-3">
                 <MdEmail className="text-lg" />
-                info@bitshift.com
+                info@bitshift-tech.com
               </Link>
-              <Link href="#" className="text-sm flex items-center gap-3">
+              {/* <Link href="#" className="text-sm flex items-center gap-3">
                 <FaPhoneAlt className="text-lg " />
                 +20 (0)123456789
-              </Link>
+              </Link> */}
               <Link href="#" className="text-sm  flex items-center gap-3">
                 <IoLocationSharp className="text-lg" />
-                Maadi, Cairo, Egypt
+                Ras Alkhaima, UAE
               </Link>
             </div>
           </div>

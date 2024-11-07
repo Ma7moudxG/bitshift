@@ -22,8 +22,6 @@ export default function NewsBlogs() {
                 </h1>
             </div>
         </div>
-  
-        
 
         <div className="relative bg-[#F1F7FE] md:py-14 py-8">
           <div className="relative smax-w-[1200px] mx-auto">

@@ -52,13 +52,13 @@ export default function FooterComponent() {
                   <MdEmail className="text-lg text-[#35BCDC]" />
                   info@bitshift.com
                 </Link>
-                <div className="text-sm text-[#667085] flex items-center gap-2 ">
+                {/* <div className="text-sm text-[#667085] flex items-center gap-2 ">
                   <FaPhoneAlt className="text-lg text-[#35BCDC]" />
                   +20 (0)123456789
-                </div>
+                </div> */}
                 <div className="text-sm text-[#667085] flex items-center gap-2">
                   <IoLocationSharp className="text-lg text-[#35BCDC]" />
-                  Maadi, Cairo, Egypt
+                  Ras Alkhaima, UAE
                 </div>
               </div>
             </div>
