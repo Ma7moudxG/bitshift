@@ -11,7 +11,7 @@ In summary, outsourcing IT support can significantly reduce costs while providin
 <br /><br />
 Learn More about how Bitshift can effectively handle your IT operations while reducing your operational cost substantially
 `,
-    url: "/news/bill-walsh-leadearship.png",
+    url: "/news/cost-benefit.jpg",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ In conclusion, engaging an outsourced IT provider not only enhances cybersecurit
 <br /> <br />
 Learn More about how Bitshift can effectively enhance your Cybersecurity while allowing you to focus on your core operations
 `,
-    url: "/news/pm-mental-models.png",
+    url: "/news/enhanced-cybersecurity.jpg",
   },
   {
     id: 3,
@@ -43,6 +43,6 @@ As businesses grow or pivot in response to market changes, outsourced providers 
 <br /> <br />
 By partnering with specialized Bitshift, you can enhance your technological capabilities while maintaining focus on their primary business objectives.
 `,
-    url: "/news/what-is-wireframing.png",
+    url: "/news/digital-transformation.JPG",
   }
 ];
