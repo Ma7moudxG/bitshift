@@ -88,15 +88,15 @@ const autoResponseEmail = `
                         <td align="left" style="font-size: 14px; padding-bottom: 10px;">
                           <img src="https://bitshift-m.netlify.app/bitshift_logo1.gif" width="150" style="padding-bottom: 10px;"/>
                           <div style="display: flex; align-items: center; padding-bottom: 5px;">
-                            <img src="https://bitshift-m.netlify.app/icons/email/phone.png" alt="Facebook" width="18"  style="margin-right: 10px;"> 
+                            <img src="https://bitshift-m.netlify.app/icons/email/phone.png" alt="Phone" width="18" height="18"  style="margin-right: 10px;"> 
                             (+2) 010 12345 4569
                           </div>
                           <a href="mailto:info@bitshift-tech.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #02033B; padding-bottom: 5px;">
-                            <img src="https://bitshift-m.netlify.app/icons/email/email.png" alt="Twitter" width="18"  style="margin-right: 10px;">
+                            <img src="https://bitshift-m.netlify.app/icons/email/email.png" alt="Email" width="18" height="18"  style="margin-right: 10px;">
                             info@bitshift-tech.com
                           </a>
                           <div style="display: flex; align-items: center;">
-                            <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="LinkedIn" width="18"  style="margin-right: 10px;">
+                            <img src="https://bitshift-m.netlify.app/icons/email/location.png" alt="Location" width="18" height="18"  style="margin-right: 10px;">
                             Ras Alkhaima, UAE
                           </div>
                           

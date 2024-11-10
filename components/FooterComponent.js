@@ -50,7 +50,7 @@ export default function FooterComponent() {
               <div className="flex flex-col items-center gap-2 justify-center space-x-4 mt-4">
                 <Link href="#" className="text-sm text-[#667085] flex items-center gap-2 hover:text-[#b3b3b3]">
                   <MdEmail className="text-lg text-[#35BCDC]" />
-                  info@bitshift.com
+                  info@bitshift-tech.com
                 </Link>
                 {/* <div className="text-sm text-[#667085] flex items-center gap-2 ">
                   <FaPhoneAlt className="text-lg text-[#35BCDC]" />
