@@ -1,8 +1,8 @@
 {
     "redirects": [
       {
-        "source": "/:path*",
-        "destination": "https://www.bitshift-tech.com/:path*",
+        "source": "/",
+        "destination": "https://www.bitshift-tech.com",
         "permanent": true
       }
     ]
