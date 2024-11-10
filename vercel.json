@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "https://bitshift-tech.com/:path*",
+        "destination": "https://www.bitshift-tech.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
+  
