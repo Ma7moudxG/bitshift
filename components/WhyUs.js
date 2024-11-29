@@ -17,6 +17,7 @@ const whys = [
     }
   ]
 
+  // console.log()
 export default function WhyUs() {
   return (
     <div className="bg-[#F1F7FE] py-16 px-8 flex flex-col gap-8">
