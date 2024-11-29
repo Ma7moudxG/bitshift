@@ -9,6 +9,7 @@ import Main from "../../components/Main";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
+// console
 export default function ContactUS() {
   return (
     <Main>
