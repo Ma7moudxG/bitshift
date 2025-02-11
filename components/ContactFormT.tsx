@@ -67,7 +67,7 @@ const ContactFormT: FC = () => {
               </Link> */}
               <Link href="#" className="text-sm  flex items-center gap-3">
                 <IoLocationSharp className="text-lg" />
-                Ras Alkhaima, UAE
+                Dubai, UAE
               </Link>
             </div>
           </div>
