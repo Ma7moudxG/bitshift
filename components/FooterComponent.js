@@ -58,7 +58,7 @@ export default function FooterComponent() {
                 </div> */}
                 <div className="text-sm text-[#667085] flex items-center gap-2">
                   <IoLocationSharp className="text-lg text-[#35BCDC]" />
-                  Ras Alkhaima, UAE
+                  Dubai, UAE
                 </div>
               </div>
             </div>
